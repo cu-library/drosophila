@@ -39,12 +39,45 @@
     float: none;
     width: 100%;
   }
+  
 }
+
+
 /*
  * Tablet sizes and up
  */
-/* @media only screen and (min-width: 768px) {} */
+@media only screen and (min-width: 768px) {
+
+     /* Reset branding */
+    #header{
+      text-align: left;
+    }
+    
+    #logo{
+      height: auto;
+      float: left;
+    }
+    
+    #logo a{
+      position: static;
+    }
+    
+    #name-and-slogan{
+      float: left;
+    }
+
+    #site-name{
+      line-height: 75px;
+    }
+
+} 
+
+
 /*
  * Desktops/laptops and up
  */
-/* @media only screen and (min-width: 1025px) {} */
+
+@media only screen and (min-width: 1025px) {
+
+
+}

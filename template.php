@@ -53,12 +53,29 @@ function drosophila_process_html(&$vars) {
 /**
  * Override or insert variables for the page templates.
  */
-/* -- Delete this line if you want to use these functions
+
 function drosophila_preprocess_page(&$vars) {
+
+  global $theme_key;
+  $theme_name = $theme_key;
+
+  // Set up logo element
+  if (at_get_setting('toggle_logo', $theme_name) === 1) {
+    $logo_path = file_create_url(drupal_get_path('theme', $theme_name) . '/logo.svg');
+    $logo_alt = check_plain(variable_get('site_name', t('Site logo')));
+    $logo_vars = array('path' => $logo_path, 'alt' => $logo_alt, 'attributes' => array('class' => 'site-logo'));
+    $vars['logo_img'] = theme('image', $logo_vars);
+    $vars['site_logo'] = $vars['logo_img'] ? l($vars['logo_img'], '<front>', array('attributes' => array('title' => t('Home page')), 'html' => TRUE)) : '';
+  }
+
+  // Javascript
+  drupal_add_js('jQuery.extend(Drupal.settings, { "pathToTheme": "' . path_to_theme() . '" });', 'inline');
 }
+
 function drosophila_process_page(&$vars) {
+
 }
-// */
+
 
 
 /**

@@ -171,15 +171,16 @@ var {
 /*
  * Wraps the leaderboard
  */
-#leaderboard-wrapper {}
+#leaderboard-wrapper {
+    background: #1A1A1A;
+}
 #leaderboard-wrapper .container {}
 
 /*
  * Wraps the header
  */
 #header-wrapper {
-  /* Debug styles, is this working */
-  background: rgba(255, 192, 203, 0.5);
+
 }
 #header-wrapper .container {}
 
@@ -223,8 +224,6 @@ var {
  * Footer wrapper
  */
 #footer-wrapper {
-  /* Debug styles, is this working? */
-  background: rgba(255, 192, 203, 0.5);
 }
 #footer-wrapper .container {}
 
@@ -1428,6 +1427,7 @@ ul.action-links li {}
 /*
  * Nested comments are indented
  */
+
 .indented {
   margin-left: 40px;
 }
@@ -1743,3 +1743,129 @@ tr.error {}
   min-height: 260px;
   width: auto;
 }
+
+
+/*
+
+Custom Styles For Drosophilia
+   __   __
+  /  \-/  \
+\_\   |   /_/
+\__\__Y__/__/
+   _{___}_
+  / (#I#) \
+     ~^~        jgs 
+
+*/
+
+/* -=-=- Global -=-=- */
+
+body {
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  background: #E6E6E6;
+}
+
+/* -=-=- Admin Toolbar -=-=- */
+/* Fix from http://drupal.stackexchange.com/a/29740 */
+
+#toolbar {
+  position: static !important;
+}
+
+body.toolbar, body.toolbar-drawer {
+  padding-top: 0 !important;
+}
+
+/* -=-=- Leaderboard -=-=- */
+
+#leaderboard-wrapper {
+  background: #1A1A1A;
+  border-bottom: 1px solid white;
+}
+
+#leaderboard-wrapper .block {
+  margin: 0px;
+}
+
+#leaderboard-wrapper .block-inner {
+  margin: 0px;
+}
+
+#leaderboard-wrapper .clearfix {
+  overflow: auto;
+}
+
+#leaderboard-wrapper li {
+  list-style: none;
+}
+
+#leaderboard-wrapper a {
+  color: #FFF;
+  padding: 0.25rem 0.45rem;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
+  border-radius: 3%/15%;
+}
+
+#leaderboard-wrapper a:hover {
+  color: #1A1A1A;
+  background-color: #EFEFEF !important;
+}
+
+#leaderboard-wrapper ul {
+  padding: 0rem;
+  margin: 0.4rem 0.3rem 0.4rem 0.6rem;
+}
+
+/* -=-=- Leaderboard Left -=-=- */
+
+#leaderboard-wrapper #block-menu-menu-leaderboard-left {
+  float: left;
+}
+
+#leaderboard-wrapper #block-menu-menu-leaderboard-left a {
+  background-color: #393939;
+}
+
+/* -=-=- Leaderboard Right -=-=- */
+
+#leaderboard-wrapper #block-menu-menu-leaderboard-right {
+  float: right;
+}
+
+#leaderboard-wrapper #block-menu-menu-leaderboard-right li {
+  float: left;
+}
+
+/* -=-=- Branding -=-=- */
+
+#header{
+  text-align: center;
+  padding-left: 20px;
+}
+
+#logo{
+  height: 1px;
+}
+
+#logo a{
+  position: relative;
+  top: -3.2em;  
+  padding: 0px;
+}
+
+#logo img{
+  width: 60px;
+}
+
+#name-and-slogan h1{
+  font-weight: 400;
+}
+
+#name-and-slogan a:visited{
+  color: black;
+}
+
+
+

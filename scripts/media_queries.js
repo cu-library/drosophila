@@ -15,6 +15,43 @@
  *
  * IMPORTANT: do not rename or move this file, or change the directory name!
  */
+
+function moveCarletonLinkDown() {
+
+  if (jQuery('#leaderboard-wrapper #block-menu-menu-leaderboard-left').length){
+    jQuery('#block-menu-menu-leaderboard-left').hide()
+    jQuery('#footer div.region div.region-inner').prepend(jQuery('#block-menu-menu-leaderboard-left'));
+    jQuery('#block-menu-menu-leaderboard-left').show()  
+
+  }
+
+}
+
+function moveCarletonLinkUp() {
+  
+  if (! jQuery('#leaderboard-wrapper #block-menu-menu-leaderboard-left').length){
+    jQuery('#block-menu-menu-leaderboard-left').hide();
+    jQuery('#leaderboard-wrapper div.container div.region div.region-inner').prepend(jQuery('#block-menu-menu-leaderboard-left'));
+    jQuery('#block-menu-menu-leaderboard-left').show();
+  }
+
+}
+
+function makeMenuLink() {
+  
+  /*jQuery('#block-menu-menu-leaderboard-right').hide();*/
+  /*jQuery('#block-menu-menu-leaderboard-right').hide();*/
+  var menuImage = Drupal.settings.pathToTheme+"/images/menu.svg";
+  jQuery('#leaderboard-wrapper div.container div.region div.region-inner').append("<img src=\""+menuImage+"\"/>);
+  
+}
+
+function destroyMenuLink() {
+  
+  jQuery('#block-menu-menu-leaderboard-right').show(); 
+
+}
+
 var queries = [
   // README! The following are examples, remove what you don't need!
 
@@ -24,9 +61,10 @@ var queries = [
     context: ['smartphone_portrait', 'smartphone_landscape'],
     call_in_each_context: false,
     callback: function() {
-      // Debug
+      moveCarletonLinkDown();
+      makeMenuLink();
       console.log('smartphone');
-    }
+    },
   },
   // portrait only
   {
@@ -51,7 +89,8 @@ var queries = [
     context: ['tablet_portrait', 'tablet_landscape'],
     call_in_each_context: false,
     callback: function() {
-      // Debug
+      moveCarletonLinkUp();
+      makeMenuLink();
       console.log('tablet');
     }
   },
@@ -77,7 +116,8 @@ var queries = [
   {
     context: 'standard',
     callback: function() {
-      // Debug
+      moveCarletonLinkUp();     
+      destroyMenuLink();
       console.log('standard desktop');
     }
   },
