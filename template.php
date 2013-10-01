@@ -69,7 +69,9 @@ function drosophila_preprocess_page(&$vars) {
   }
 
   // Javascript
-  drupal_add_js('jQuery.extend(Drupal.settings, { "pathToTheme": "' . path_to_theme() . '" });', 'inline');
+  global $base_url;
+  drupal_add_js('jQuery.extend(Drupal.settings, { "pathToTheme": "' . $base_url .'/'. path_to_theme() . '" });', 'inline');
+
 }
 
 function drosophila_process_page(&$vars) {

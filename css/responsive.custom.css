@@ -39,7 +39,7 @@
     float: none;
     width: 100%;
   }
-  
+
 }
 
 
@@ -68,6 +68,10 @@
 
     #site-name{
       line-height: 75px;
+    }
+
+    #leaderboard-wrapper #block-menu-menu-leaderboard-left {
+      margin-left: 1rem;
     }
 
 } 

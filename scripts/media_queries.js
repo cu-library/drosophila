@@ -38,17 +38,17 @@ function moveCarletonLinkUp() {
 }
 
 function makeMenuLink() {
-  
-  /*jQuery('#block-menu-menu-leaderboard-right').hide();*/
-  /*jQuery('#block-menu-menu-leaderboard-right').hide();*/
-  var menuImage = Drupal.settings.pathToTheme+"/images/menu.svg";
-  jQuery('#leaderboard-wrapper div.container div.region div.region-inner').append("<img src=\""+menuImage+"\"/>);
-  
+ 
+  if (! jQuery('#leaderboard-wrapper #menu-link').length){
+    jQuery('#block-system-main-menu').hide();
+    var menuImage = Drupal.settings.pathToTheme+"/images/menu.svg";
+    jQuery('#leaderboard-wrapper div.container div.region div.region-inner').prepend("<img id=\"menu-link\" src=\""+menuImage+"\" class=\"inactive\"/>");
+  }
 }
 
-function destroyMenuLink() {
-  
-  jQuery('#block-menu-menu-leaderboard-right').show(); 
+function destroyMenuLink() {  
+  jQuery('#block-system-main-menu').removeClass('accordion').show(); 
+  jQuery('#menu-link').remove();
 
 }
 
@@ -60,8 +60,7 @@ var queries = [
   {
     context: ['smartphone_portrait', 'smartphone_landscape'],
     call_in_each_context: false,
-    callback: function() {
-      moveCarletonLinkDown();
+    callback: function() {      
       makeMenuLink();
       console.log('smartphone');
     },
@@ -70,6 +69,7 @@ var queries = [
   {
     context: 'smartphone_portrait',
     callback: function() {
+      moveCarletonLinkDown();
       // Debug
       console.log('smartphone portrait');
     }
@@ -79,6 +79,7 @@ var queries = [
     context: 'smartphone_landscape',
     callback: function() {
       // Debug
+      moveCarletonLinkUp();
       console.log('smartphone_landscape ');
     }
   },
@@ -89,8 +90,7 @@ var queries = [
     context: ['tablet_portrait', 'tablet_landscape'],
     call_in_each_context: false,
     callback: function() {
-      moveCarletonLinkUp();
-      makeMenuLink();
+      moveCarletonLinkUp();      
       console.log('tablet');
     }
   },
@@ -98,7 +98,7 @@ var queries = [
   {
     context: 'tablet_portrait',
     callback: function() {
-      // Debug
+      makeMenuLink();
       console.log('tablet_portrait');
     }
   },
@@ -106,6 +106,7 @@ var queries = [
   {
     context: 'tablet_landscape',
     callback: function() {
+      destroyMenuLink();
       // Debug
       console.log('tablet_landscape');
     }
@@ -125,3 +126,55 @@ var queries = [
 
 // Go!
 MQ.init(queries);
+
+//Here we start getting the menu working...
+jQuery(document).ready(function($){
+  
+  $('body').delegate('#menu-link.inactive', 'hover', function(event){
+    if( event.type === 'mouseenter' ){  
+      var menuImage = Drupal.settings.pathToTheme+"/images/menu-hover.svg";
+      $(this).addClass('hover');
+      $(this).attr('src', menuImage);      
+    }
+    else {
+      var menuImage = Drupal.settings.pathToTheme+"/images/menu.svg";
+      $(this).removeClass('hover');
+      $(this).attr('src', menuImage); 
+    }
+  });
+
+  $('body').delegate('#menu-link.active', 'hover', function(event){
+    if( event.type === 'mouseenter' ){  
+      var menuImage = Drupal.settings.pathToTheme+"/images/menu-active-hover.svg";
+      $(this).addClass('hover');
+      $(this).attr('src', menuImage);      
+    }
+    else {
+      var menuImage = Drupal.settings.pathToTheme+"/images/menu-active.svg";
+      $(this).removeClass('hover');
+      $(this).attr('src', menuImage); 
+    }
+  });
+
+  $('body').delegate('#menu-link', 'click', function(event){
+    if($(this).hasClass('active')){
+      var menuImage = Drupal.settings.pathToTheme+"/images/menu.svg";
+      $(this).attr('src', menuImage);
+      $(this).removeClass('active');
+      $(this).addClass('inactive');
+      $(this).removeClass('hover');
+      $('#block-system-main-menu').hide();
+      $('#block-system-main-menu').removeClass('accordion');
+    }
+    else{
+      var menuImage = Drupal.settings.pathToTheme+"/images/menu-active.svg";
+      $(this).attr('src', menuImage); 
+      $(this).addClass('active');
+      $(this).removeClass('inactive');
+      $(this).removeClass('hover');
+      $('#block-system-main-menu').show();
+      $('#block-system-main-menu').addClass('accordion');
+    }
+  });
+
+});

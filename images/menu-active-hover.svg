@@ -14,7 +14,7 @@
    id="svg2"
    version="1.1"
    inkscape:version="0.48.4 r9939"
-   sodipodi:docname="menu-hover.svg">
+   sodipodi:docname="menu-active.svg">
   <defs
      id="defs4" />
   <sodipodi:namedview
@@ -37,8 +37,8 @@
      inkscape:guide-bbox="true"
      inkscape:window-width="1480"
      inkscape:window-height="693"
-     inkscape:window-x="262"
-     inkscape:window-y="222"
+     inkscape:window-x="43"
+     inkscape:window-y="218"
      inkscape:window-maximized="0">
     <inkscape:grid
        type="xygrid"
@@ -66,7 +66,7 @@
      id="layer1"
      transform="translate(0,-1022.3622)">
     <rect
-       style="fill:#393939;fill-opacity:1;stroke:none"
+       style="fill:#efefef;fill-opacity:1;stroke:none"
        id="rect2985"
        width="35"
        height="30"
@@ -74,9 +74,10 @@
        y="1022.3622" />
     <g
        id="g5004"
-       transform="translate(0.17587715,-2)">
+       transform="matrix(-1,0,0,-1,34.824123,2078.198)"
+       style="fill:#1a1a1a">
       <path
-         style="fill:#ffffff;fill-opacity:1;stroke:none"
+         style="fill:#1a1a1a;fill-opacity:1;stroke:none"
          d="m 8.75,17.25 -1.625,1.65625 10.375,8.375 10.375,-8.375 L 26.25,17.25 17.5,24 z"
          transform="translate(-0.17587715,1022.3622)"
          id="rect4963-8"
@@ -84,22 +85,24 @@
          sodipodi:nodetypes="ccccccc" />
     </g>
     <rect
-       style="fill:#ffffff;fill-opacity:1;stroke:none"
+       style="fill:#1a1a1a;fill-opacity:1;stroke:none"
        id="rect4963-2-4"
        width="14.838836"
        height="2.2418642"
-       x="10.080582"
-       y="1028.5546"
+       x="-24.919418"
+       y="-1047.6434"
        rx="0"
-       ry="0" />
+       ry="0"
+       transform="scale(-1,-1)" />
     <rect
-       style="fill:#ffffff;fill-opacity:1;stroke:none"
+       style="fill:#1a1a1a;fill-opacity:1;stroke:none"
        id="rect4963-2-4-1"
        width="14.838836"
        height="2.2418642"
-       x="10.080582"
-       y="1033.0386"
+       x="-24.919418"
+       y="-1043.1594"
        rx="0"
-       ry="0" />
+       ry="0"
+       transform="scale(-1,-1)" />
   </g>
 </svg>

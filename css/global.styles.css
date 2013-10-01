@@ -1780,7 +1780,7 @@ body.toolbar, body.toolbar-drawer {
 
 #leaderboard-wrapper {
   background: #1A1A1A;
-  border-bottom: 1px solid white;
+  border-bottom: 2px solid white;
 }
 
 #leaderboard-wrapper .block {
@@ -1815,13 +1815,14 @@ body.toolbar, body.toolbar-drawer {
 
 #leaderboard-wrapper ul {
   padding: 0rem;
-  margin: 0.4rem 0.3rem 0.4rem 0.6rem;
+  margin: 0.4rem 0.5rem 0.4rem 0.5rem;
 }
 
 /* -=-=- Leaderboard Left -=-=- */
 
 #leaderboard-wrapper #block-menu-menu-leaderboard-left {
   float: left;
+
 }
 
 #leaderboard-wrapper #block-menu-menu-leaderboard-left a {
@@ -1830,42 +1831,93 @@ body.toolbar, body.toolbar-drawer {
 
 /* -=-=- Leaderboard Right -=-=- */
 
-#leaderboard-wrapper #block-menu-menu-leaderboard-right {
+#leaderboard-wrapper #block-system-main-menu {
   float: right;
+  margin-left: 0px;
 }
 
-#leaderboard-wrapper #block-menu-menu-leaderboard-right li {
+#leaderboard-wrapper #block-system-main-menu li {
   float: left;
+  padding-right: 0.6rem;
+}
+
+#leaderboard-wrapper #block-system-main-menu.accordion {
+  clear:both;
+  float:left;
+  width: 100%;
+  margin-bottom: 1.5rem;
+}
+
+#leaderboard-wrapper #block-system-main-menu.accordion ul{
+
+}
+
+#leaderboard-wrapper #block-system-main-menu.accordion li{
+  width: 100%;
+  padding-right: 0rem;
+}
+
+#leaderboard-wrapper #block-system-main-menu.accordion li a{
+  display: block;
+  margin-left:0.4rem;
+  margin-right:0.4rem;
+  border-radius:1%/20%;
+  padding: 0.5rem;
+}
+
+/* -=-=- Menu Link -=-=- */
+
+#menu-link {
+  float: right;
+  margin: 0.3rem 0.3rem 0.3rem 0.5rem;
+  padding: 0.1rem;
+  border: thin solid #393939;
+  border-radius: 5%/20%;
+  background-color: #393939;
+}
+
+#menu-link.hover {
+  color: #1A1A1A;
+  background-color: #EFEFEF !important;
+  border: thin solid #EFEFEF;
 }
 
 /* -=-=- Branding -=-=- */
 
-#header{
+#header {
   text-align: center;
   padding-left: 20px;
 }
 
-#logo{
+#logo {
   height: 1px;
+  padding-bottom: 0px;
+  margin-right: 0.3rem;
 }
 
-#logo a{
+#logo a {
   position: relative;
   top: -3.2em;  
   padding: 0px;
 }
 
-#logo img{
-  width: 60px;
+#logo img {
+  width: 50px;
 }
 
-#name-and-slogan h1{
+#name-and-slogan h1 {
   font-weight: 400;
 }
 
-#name-and-slogan a:visited{
+#name-and-slogan a:visited {
   color: black;
 }
 
+/* -=-=- Admin Overlay -=-=- */
 
+#overlay {
+  min-width: 300px;
+}
+
+/* -=-=- Secondary Menu -=-=- */
 
