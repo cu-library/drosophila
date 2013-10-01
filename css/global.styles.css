@@ -1919,5 +1919,47 @@ body.toolbar, body.toolbar-drawer {
   min-width: 300px;
 }
 
+#overlay #branding {
+  display: none;
+}
+
 /* -=-=- Secondary Menu -=-=- */
+
+#header #block-menu-menu-secondary-menu{
+  float: right;
+  margin-bottom: 0px;
+}
+
+#header #block-menu-menu-secondary-menu li {
+  list-style: none;
+  float: left;
+  margin-right: 1rem;
+}
+
+#header #block-menu-menu-secondary-menu ul.menu {
+  margin-top: 0.5rem;
+}
+
+#header #block-menu-menu-secondary-menu li.last a {
+  color: #EFEFEF;
+  background: #3D6477;
+  border-radius: 3%/15%;
+  padding: 0.15rem 0.4rem;
+}
+
+#header #block-menu-menu-secondary-menu li.last a:hover {
+  background: #BBD3DF;
+  color: #1A1A1A;
+  text-decoration: none;
+
+}
+
+/* -=-=- Search -=-=- */
+
+#block-search-form {
+  float: right;
+  clear: right;
+  margin-right: 1rem;
+}
+
 

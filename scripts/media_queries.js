@@ -16,7 +16,7 @@
  * IMPORTANT: do not rename or move this file, or change the directory name!
  */
 
-function moveCarletonLinkDown() {
+function moveLeaderboardLeftDown() {
 
   if (jQuery('#leaderboard-wrapper #block-menu-menu-leaderboard-left').length){
     jQuery('#block-menu-menu-leaderboard-left').hide()
@@ -27,7 +27,7 @@ function moveCarletonLinkDown() {
 
 }
 
-function moveCarletonLinkUp() {
+function moveLeaderboardLeftUp() {
   
   if (! jQuery('#leaderboard-wrapper #block-menu-menu-leaderboard-left').length){
     jQuery('#block-menu-menu-leaderboard-left').hide();
@@ -52,6 +52,22 @@ function destroyMenuLink() {
 
 }
 
+function moveSecondaryMenuLinks() {
+  jQuery('#block-menu-menu-secondary-menu').hide();
+}
+
+function restoreSecondaryMenuLinks() {
+  jQuery('#block-menu-menu-secondary-menu').show();
+}
+
+function moveSearch() {
+  jQuery('#block-search-form').hide();
+}
+
+function restoreSearch() {
+  jQuery('#block-search-form').show();
+}
+
 var queries = [
   // README! The following are examples, remove what you don't need!
 
@@ -62,6 +78,9 @@ var queries = [
     call_in_each_context: false,
     callback: function() {      
       makeMenuLink();
+      moveLeaderboardLeftDown();
+      moveSecondaryMenuLinks();
+      moveSearch();
       console.log('smartphone');
     },
   },
@@ -69,7 +88,7 @@ var queries = [
   {
     context: 'smartphone_portrait',
     callback: function() {
-      moveCarletonLinkDown();
+      
       // Debug
       console.log('smartphone portrait');
     }
@@ -79,7 +98,6 @@ var queries = [
     context: 'smartphone_landscape',
     callback: function() {
       // Debug
-      moveCarletonLinkUp();
       console.log('smartphone_landscape ');
     }
   },
@@ -89,8 +107,7 @@ var queries = [
   {
     context: ['tablet_portrait', 'tablet_landscape'],
     call_in_each_context: false,
-    callback: function() {
-      moveCarletonLinkUp();      
+    callback: function() {    
       console.log('tablet');
     }
   },
@@ -98,7 +115,10 @@ var queries = [
   {
     context: 'tablet_portrait',
     callback: function() {
+      moveLeaderboardLeftDown(); 
       makeMenuLink();
+      moveSecondaryMenuLinks();
+      moveSearch();
       console.log('tablet_portrait');
     }
   },
@@ -106,8 +126,10 @@ var queries = [
   {
     context: 'tablet_landscape',
     callback: function() {
+      moveLeaderboardLeftUp(); 
       destroyMenuLink();
-      // Debug
+      restoreSecondaryMenuLinks();
+      restoreSearch();
       console.log('tablet_landscape');
     }
   },
@@ -117,8 +139,10 @@ var queries = [
   {
     context: 'standard',
     callback: function() {
-      moveCarletonLinkUp();     
+      moveLeaderboardLeftUp();     
       destroyMenuLink();
+      restoreSecondaryMenuLinks();
+      restoreSearch();
       console.log('standard desktop');
     }
   },

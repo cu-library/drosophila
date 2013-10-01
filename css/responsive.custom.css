@@ -66,6 +66,10 @@
       float: left;
     }
 
+    #branding{
+      float: left;
+    }
+
     #site-name{
       line-height: 75px;
     }
