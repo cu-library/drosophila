@@ -1780,7 +1780,6 @@ body.toolbar, body.toolbar-drawer {
 
 #leaderboard-wrapper {
   background: #1A1A1A;
-  border-bottom: 2px solid white;
 }
 
 #leaderboard-wrapper .block {
@@ -1810,23 +1809,35 @@ body.toolbar, body.toolbar-drawer {
 
 #leaderboard-wrapper a:hover {
   color: #1A1A1A;
-  background-color: #EFEFEF !important;
+  background-color: #EFEFEF;
 }
+
+#leaderboard-wrapper #logo a:hover {
+  color: transparent;
+  background-color: transparent;
+}
+
 
 #leaderboard-wrapper ul {
   padding: 0rem;
-  margin: 0.4rem 0.5rem 0.4rem 0.5rem;
+  margin: 0.4rem 0rem 0.4rem 0.5rem;
 }
 
 /* -=-=- Leaderboard Left -=-=- */
 
-#leaderboard-wrapper #block-menu-menu-leaderboard-left {
+#leaderboard-wrapper section:first-child {
   float: left;
-
 }
 
-#leaderboard-wrapper #block-menu-menu-leaderboard-left a {
-  background-color: #393939;
+#leaderboard-wrapper section:first-child a {
+  color: #EFEFEF;
+  background: #3D6477;
+}
+    
+#leaderboard-wrapper section:first-child a:hover {
+  background: #BBD3DF;
+  color: #1A1A1A;
+  text-decoration: none;
 }
 
 /* -=-=- Leaderboard Right -=-=- */
@@ -1841,15 +1852,19 @@ body.toolbar, body.toolbar-drawer {
   padding-right: 0.6rem;
 }
 
+#leaderboard-wrapper #block-system-main-menu li.last {
+  padding-right: 0rem;
+}
+
 #leaderboard-wrapper #block-system-main-menu.accordion {
   clear:both;
   float:left;
   width: 100%;
-  margin-bottom: 1.5rem;
+  margin-top: 0px;
 }
 
 #leaderboard-wrapper #block-system-main-menu.accordion ul{
-
+  margin-top: 0px;
 }
 
 #leaderboard-wrapper #block-system-main-menu.accordion li{
@@ -1869,7 +1884,7 @@ body.toolbar, body.toolbar-drawer {
 
 #menu-link {
   float: right;
-  margin: 0.3rem 0.3rem 0.3rem 0.5rem;
+  margin: 0.2rem 0.3rem 0.2rem 0.5rem;
   padding: 0.1rem;
   border: thin solid #393939;
   border-radius: 5%/20%;
@@ -1878,19 +1893,25 @@ body.toolbar, body.toolbar-drawer {
 
 #menu-link.hover {
   color: #1A1A1A;
-  background-color: #EFEFEF !important;
+  background-color: #EFEFEF;
   border: thin solid #EFEFEF;
 }
 
 /* -=-=- Branding -=-=- */
 
+#site-name {
+  line-height: 2.4rem;
+
+}
+
 #header {
   text-align: center;
-  padding-left: 20px;
+  padding-left: 5px;
 }
 
 #logo {
   height: 1px;
+  text-align: center;
   padding-bottom: 0px;
   margin-right: 0.3rem;
 }
@@ -1913,6 +1934,23 @@ body.toolbar, body.toolbar-drawer {
   color: black;
 }
 
+#leaderboard-wrapper #logo {
+  margin: 0px;
+  padding: 0px;
+}
+
+#leaderboard-wrapper #logo a {
+  top: 0.3rem;
+}
+
+#leaderboard-wrapper div.container {
+  overflow: visible;
+}
+
+#leaderboard-wrapper div.region-inner {
+  overflow: visible;
+}
+
 /* -=-=- Admin Overlay -=-=- */
 
 #overlay {
@@ -1925,41 +1963,147 @@ body.toolbar, body.toolbar-drawer {
 
 /* -=-=- Secondary Menu -=-=- */
 
-#header #block-menu-menu-secondary-menu{
+#header section.block-menu{
   float: right;
   margin-bottom: 0px;
 }
 
-#header #block-menu-menu-secondary-menu li {
+#header section.block-menu li {
   list-style: none;
   float: left;
   margin-right: 1rem;
 }
 
-#header #block-menu-menu-secondary-menu ul.menu {
+#header section.block-menu ul.menu {
   margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 
-#header #block-menu-menu-secondary-menu li.last a {
-  color: #EFEFEF;
-  background: #3D6477;
-  border-radius: 3%/15%;
-  padding: 0.15rem 0.4rem;
+#header section.block-menu div.block-inner {
+  margin: 0px;
 }
 
-#header #block-menu-menu-secondary-menu li.last a:hover {
-  background: #BBD3DF;
-  color: #1A1A1A;
-  text-decoration: none;
+#header section.block-menu ul {
+  padding: 0px;
+}
 
+#leaderboard-wrapper #block-menu-menu-secondary-menu-to-hamburger.accordion {
+  clear:both;
+  float:left;
+  width: 100%;
+}
+
+#leaderboard-wrapper #block-menu-menu-secondary-menu-to-hamburger.accordion ul{
+  margin-bottom: 0px;
+}
+
+#leaderboard-wrapper #block-menu-menu-secondary-menu-to-hamburger.accordion li{
+  width: 100%;
+  padding-right: 0rem;
+}
+
+#leaderboard-wrapper #block-menu-menu-secondary-menu-to-hamburger.accordion li a{
+  display: block;
+  margin-left:0.4rem;
+  margin-right:0.4rem;
+  border-radius:1%/20%;
+  padding: 0.5rem;
 }
 
 /* -=-=- Search -=-=- */
 
-#block-search-form {
-  float: right;
-  clear: right;
-  margin-right: 1rem;
+#block-search-form  {
+  margin-bottom: 10px;
+}
+
+#block-search-form div.block-inner {
+  margin-right: 0px;
 }
 
 
+#block-search-form form {
+  float: right;
+  clear: right;
+  margin-right: 1rem;
+  margin-bottom: 0rem;  
+  border: thin solid #DADADA;
+  background: #F1F1F1;
+  border-radius:1%/20%;
+}
+
+#block-search-form form input {
+  float: left;
+  border: none;
+  background: #F1F1F1;
+  border-radius:1%/20%;
+  padding: 0.5rem;
+  width: 12rem;
+  border-right: none;
+}
+
+#block-search-form form input.form-submit {
+  float: right;
+  clear: none;
+  border: none;
+  text-indent: -9999px;
+  width: 23px;
+  height: 23px;
+  margin-top: 4px;
+  margin-right: 3px;
+  margin-left: 3px;
+  background-image: url('../images/search.svg');
+  background-size: contain;
+}
+
+#leaderboard-wrapper #block-search-form.accordion {
+  float: left;
+  width: 100%;  
+}
+
+#leaderboard-wrapper #block-search-form.accordion div.block-inner {
+  display: block;
+  margin: 0rem 1rem 0.5rem 1.3rem;
+}
+
+#leaderboard-wrapper #block-search-form.accordion form {
+  float: left;
+  clear: both;
+  width: 100%;
+  margin: 0px;
+}
+
+#leaderboard-wrapper #block-search-form.accordion input.form-text {
+  width: 90%;
+}
+
+#leaderboard-wrapper #block-search-form.accordion input.form-submit {
+  position: absolute;
+  right: 20px;
+  top: 2px;
+}
+
+#leaderboard-wrapper #block-search-form.accordion div.contextual-links-wrapper {
+  display: none;
+}
+
+#leaderboard-wrapper #block-search-form {
+  overflow: visible;
+}
+
+#leaderboard-wrapper #block-search-form div.clearfix {
+  overflow: visible;
+}
+
+/* -=-=- Nav Wrapper -=-=- */
+
+#nav-wrapper {
+  min-height: 1rem;
+  background: #b9212c;
+}
+
+
+/* -=-=- Content -=-=- */
+
+#content-wrapper div.container {
+  background: white;
+}

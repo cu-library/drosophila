@@ -152,6 +152,11 @@
       <div id="nav-wrapper">
         <div class="container clearfix">
           <?php print render($page['menu_bar']); ?>
+          <?php print render($title_prefix); ?>
+          <?php if ($title): ?>
+            <h1 id="page-title"><?php print $title; ?></h1>
+          <?php endif; ?>
+          <?php print render($title_suffix); // Prints page level contextual links ?>
           <?php /*if ($primary_navigation): print $primary_navigation; endif;*/ ?>
           <?php /* if ($secondary_navigation): print $secondary_navigation; endif; */ ?>
         </div>
@@ -191,14 +196,8 @@
 
           <<?php print $tag; ?> id="main-content">
 
-            <?php print render($title_prefix); ?>
-
-            <?php if ($title || $primary_local_tasks || $secondary_local_tasks || $action_links = render($action_links)): ?>
+            <?php if ($primary_local_tasks || $secondary_local_tasks || $action_links = render($action_links)): ?>
               <header<?php print $content_header_attributes; ?>>
-
-                <?php if ($title): ?>
-                  <h1 id="page-title"><?php print $title; ?></h1>
-                <?php endif; ?>
 
                 <?php if ($primary_local_tasks || $secondary_local_tasks || $action_links): ?>
                   <div id="tasks">
@@ -228,8 +227,6 @@
             <?php endif; ?>
 
             <?php print $feed_icons; ?>
-
-            <?php print render($title_suffix); // Prints page level contextual links ?>
 
           </<?php print $tag; ?>>
 

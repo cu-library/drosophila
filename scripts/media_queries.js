@@ -17,28 +17,20 @@
  */
 
 function moveLeaderboardLeftDown() {
-
   if (jQuery('#leaderboard-wrapper #block-menu-menu-leaderboard-left').length){
-    jQuery('#block-menu-menu-leaderboard-left').hide()
     jQuery('#footer div.region div.region-inner').prepend(jQuery('#block-menu-menu-leaderboard-left'));
-    jQuery('#block-menu-menu-leaderboard-left').show()  
-
   }
 
 }
 
-function moveLeaderboardLeftUp() {
-  
+function moveLeaderboardLeftUp() {  
   if (! jQuery('#leaderboard-wrapper #block-menu-menu-leaderboard-left').length){
-    jQuery('#block-menu-menu-leaderboard-left').hide();
     jQuery('#leaderboard-wrapper div.container div.region div.region-inner').prepend(jQuery('#block-menu-menu-leaderboard-left'));
-    jQuery('#block-menu-menu-leaderboard-left').show();
   }
 
 }
 
-function makeMenuLink() {
- 
+function makeMenuLink() { 
   if (! jQuery('#leaderboard-wrapper #menu-link').length){
     jQuery('#block-system-main-menu').hide();
     var menuImage = Drupal.settings.pathToTheme+"/images/menu.svg";
@@ -49,23 +41,72 @@ function makeMenuLink() {
 function destroyMenuLink() {  
   jQuery('#block-system-main-menu').removeClass('accordion').show(); 
   jQuery('#menu-link').remove();
-
 }
 
 function moveSecondaryMenuLinks() {
-  jQuery('#block-menu-menu-secondary-menu').hide();
+  if (! jQuery('#leaderboard-wrapper #block-menu-menu-secondary-menu-to-leaderboa').length){
+    jQuery('#block-menu-menu-secondary-menu').hide();
+    jQuery('#leaderboard-wrapper div.container div.region div.region-inner').prepend(jQuery('#block-menu-menu-secondary-menu-to-leaderboa'));
+  }
+
+  if (! jQuery('#leaderboard-wrapper #block-menu-menu-secondary-menu-to-hamburger').length){
+    jQuery('#block-menu-menu-secondary-menu-to-hamburger').hide();
+    jQuery('#leaderboard-wrapper #block-system-main-menu').before(jQuery('#block-menu-menu-secondary-menu-to-hamburger'));
+  }
 }
 
 function restoreSecondaryMenuLinks() {
-  jQuery('#block-menu-menu-secondary-menu').show();
+  jQuery('#block-menu-menu-secondary-menu').show(); 
+  
+  if (jQuery('#leaderboard-wrapper #block-menu-menu-secondary-menu-to-hamburger').length){
+    jQuery('#block-menu-menu-secondary-menu-to-hamburger').show();
+    jQuery('#header-wrapper div.container div.region div.region-inner').prepend(jQuery('#block-menu-menu-secondary-menu-to-hamburger'));
+  }
+
+  if (jQuery('#leaderboard-wrapper #block-menu-menu-secondary-menu-to-leaderboa').length){
+    jQuery('#header-wrapper div.container div.region div.region-inner').prepend(jQuery('#block-menu-menu-secondary-menu-to-leaderboa'));
+  }
+
 }
 
 function moveSearch() {
-  jQuery('#block-search-form').hide();
+  if (! jQuery('#leaderboard-wrapper #block-search-form').length){
+    jQuery('#block-search-form').hide();
+    jQuery('#leaderboard-wrapper div.container div.region div.region-inner').append(jQuery('#block-search-form'));
+  }
 }
 
-function restoreSearch() {
-  jQuery('#block-search-form').show();
+function restoreSearch() { 
+  if (jQuery('#leaderboard-wrapper #block-search-form').length){
+    jQuery('#block-search-form').show();
+    jQuery('#header-wrapper div.container div.region div.region-inner').append(jQuery('#block-search-form'));
+  }
+}
+
+function moveSearch() {
+  if (! jQuery('#leaderboard-wrapper #block-search-form').length){
+    jQuery('#block-search-form').hide();
+    jQuery('#leaderboard-wrapper div.container div.region div.region-inner').append(jQuery('#block-search-form'));
+  }
+}
+
+function restoreSearch() { 
+  if (jQuery('#leaderboard-wrapper #block-search-form').length){
+    jQuery('#block-search-form').show();
+    jQuery('#header-wrapper div.container div.region div.region-inner').append(jQuery('#block-search-form'));
+  }
+}
+
+function moveLogo() { 
+  if (! jQuery('#leaderboard-wrapper #logo').length){
+    jQuery('#leaderboard-wrapper #menu-link').after(jQuery('#logo'));
+  }
+}
+
+function restoreLogo() {
+  if (jQuery('#leaderboard-wrapper #logo').length){
+    jQuery('#branding').prepend(jQuery('#logo'));
+  }
 }
 
 var queries = [
@@ -81,6 +122,7 @@ var queries = [
       moveLeaderboardLeftDown();
       moveSecondaryMenuLinks();
       moveSearch();
+      moveLogo();
       console.log('smartphone');
     },
   },
@@ -119,6 +161,7 @@ var queries = [
       makeMenuLink();
       moveSecondaryMenuLinks();
       moveSearch();
+      moveLogo();
       console.log('tablet_portrait');
     }
   },
@@ -130,6 +173,7 @@ var queries = [
       destroyMenuLink();
       restoreSecondaryMenuLinks();
       restoreSearch();
+      restoreLogo();
       console.log('tablet_landscape');
     }
   },
@@ -143,6 +187,7 @@ var queries = [
       destroyMenuLink();
       restoreSecondaryMenuLinks();
       restoreSearch();
+      restoreLogo();
       console.log('standard desktop');
     }
   },
@@ -189,6 +234,10 @@ jQuery(document).ready(function($){
       $(this).removeClass('hover');
       $('#block-system-main-menu').hide();
       $('#block-system-main-menu').removeClass('accordion');
+      $('#block-menu-menu-secondary-menu-to-hamburger').hide();
+      $('#block-menu-menu-secondary-menu-to-hamburger').removeClass('accordion');
+      $('#block-search-form').hide();
+      $('#block-search-form').removeClass('accordion');
     }
     else{
       var menuImage = Drupal.settings.pathToTheme+"/images/menu-active.svg";
@@ -198,7 +247,14 @@ jQuery(document).ready(function($){
       $(this).removeClass('hover');
       $('#block-system-main-menu').show();
       $('#block-system-main-menu').addClass('accordion');
+      $('#block-menu-menu-secondary-menu-to-hamburger').show();
+      $('#block-menu-menu-secondary-menu-to-hamburger').addClass('accordion');  
+      $('#block-search-form').show();
+      $('#block-search-form').addClass('accordion'); 
     }
   });
+
+  $('#edit-search-block-form--2').attr('placeholder', 'Search the library website...');
+  
 
 });

@@ -14,3 +14,12 @@ The main menu must be in the leaderboard region.
 
 This theme relies on the above hardcoded menu/block names. 
 
+It also requires menu blocks in the header to be in this order: 
+
+Secondary Menu To Leaderboard Left	
+ 
+Secondary Menu to Hamburger	
+ 
+Secondary Menu	
+ 
+Search form
