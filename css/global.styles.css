@@ -1758,6 +1758,14 @@ Custom Styles For Drosophilia
 
 */
 
+/* -=-=- Toolbar -=-=- */
+ #toolbar{
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+ }
+
+
 /* -=-=- Global -=-=- */
 
 body {
@@ -1900,7 +1908,7 @@ body.toolbar, body.toolbar-drawer {
 /* -=-=- Branding -=-=- */
 
 #site-name {
-  line-height: 2.4rem;
+  line-height: 2.8rem;
 
 }
 
@@ -1930,7 +1938,7 @@ body.toolbar, body.toolbar-drawer {
   font-weight: 400;
 }
 
-#name-and-slogan a:visited {
+#name-and-slogan a {
   color: black;
 }
 
@@ -2096,14 +2104,33 @@ body.toolbar, body.toolbar-drawer {
 
 /* -=-=- Nav Wrapper -=-=- */
 
-#nav-wrapper {
-  min-height: 1rem;
-  background: #b9212c;
+#nav-wrapper div.container h1 {
+  text-align: center;
 }
 
+#nav-wrapper {
+  color: white;
+} 
+
+#nav-wrapper div.container {
+  background: #b9212c;
+}
 
 /* -=-=- Content -=-=- */
 
 #content-wrapper div.container {
   background: white;
+  padding-top: 1px;
 }
+
+/* -=-=- Tasks -=-=- */
+
+#tasks {
+  margin-bottom: 0.2rem;
+}
+
+#tasks .tabs {
+  margin-top: 0.4rem;
+  margin-bottom: 0.2rem;
+}
+

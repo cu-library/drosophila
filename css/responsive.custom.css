@@ -118,9 +118,54 @@
     }
 
     #site-name {
-      font-size: 2.3rem;
+      font-size: 2.4rem;
     }
 
+    #nav-wrapper {
+      color: white;
+    } 
+    
+    #nav-wrapper div.container {
+      background: #b9212c;
+    }
+    
+    #nav-wrapper div.container h1{
+      border-right: 1rem solid #B9212c;
+      border-left: 1rem solid #B9212c;
+      padding-left: 1rem;
+    }
+    
+    /* -=-=- Content -=-=- */
+    
+    #content-wrapper div.container {
+      background: white;
+    
+    }
+    
+    #content-wrapper #columns {
+      border-top: 1rem solid #5A1E17;
+      border-left: 1rem solid #E6E6E6;
+      border-right: 1rem solid #E6E6E6;
+      background: white;
+    }
+    
+    #content-wrapper div.columns-inner {
+      position: relative;
+      top: -1rem;
+      background: white;
+    }
+
+    #nav-wrapper div.container h1 {
+      padding-left: 1rem;
+    }
+
+    #content-wrapper div.container {
+      padding-top: 0px;
+    }
+
+    #nav-wrapper div.container h1 {
+      text-align: left;
+    }
 
 } 
 
