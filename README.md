@@ -23,3 +23,7 @@ Secondary Menu to Hamburger
 Secondary Menu	
  
 Search form
+
+## Status Update - 2013/10/04
+
+Image: ![Screenshot](http://i.imgur.com/PDJ9ddK.png?1)
