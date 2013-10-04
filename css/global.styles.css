@@ -1828,7 +1828,7 @@ body.toolbar, body.toolbar-drawer {
 
 #leaderboard-wrapper ul {
   padding: 0rem;
-  margin: 0.4rem 0rem 0.4rem 0.5rem;
+  margin: 0.4rem 0.2rem 0.4rem 0.5rem;
 }
 
 /* -=-=- Leaderboard Left -=-=- */
@@ -2046,7 +2046,7 @@ body.toolbar, body.toolbar-drawer {
 #block-search-form form {
   float: right;
   clear: right;
-  margin-right: 1rem;
+  margin-right: 1.5rem;
   margin-bottom: 0rem;  
   border: thin solid #DADADA;
   background: #F1F1F1;

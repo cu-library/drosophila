@@ -2,6 +2,12 @@
 
 Based on the excellent [Adaptive Theme](https://drupal.org/project/adaptivetheme).
 
+When completed, we hope this theme will be:
+
+  1) Responsive (useable on mobile and desktop devices)
+  2) Accessible
+  3) Beautiful 
+
 Important notes:
 
 'Leaderboard-Left' must be in the leaderboard region.
