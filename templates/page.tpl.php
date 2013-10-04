@@ -138,7 +138,6 @@
                 </hgroup><!-- /end #name-and-slogan -->
               <?php endif; ?>
 
-
             </div><!-- /end #branding -->
           <?php endif; ?>
 
@@ -171,25 +170,26 @@
       </div>
     <?php endif; ?>
 
-    <?php if ($messages || $page['help']): ?>
-      <div id="messages-help-wrapper">
-        <div class="container clearfix">
-          <?php print $messages; ?>
-          <?php print render($page['help']); ?>
-        </div>
-      </div>
-    <?php endif; ?>
-
-    <?php if ($page['secondary_content']): ?>
-      <div id="secondary-content-wrapper">
-        <div class="container clearfix">
-          <?php print render($page['secondary_content']); ?>
-        </div>
-      </div>
-    <?php endif; ?>
-
     <div id="content-wrapper"><div class="container">
       <div id="columns"><div class="columns-inner clearfix">
+
+       <?php if ($messages || $page['help']): ?>
+         <div id="messages-help-wrapper">
+           <div class="container clearfix">
+             <?php print $messages; ?>
+             <?php print render($page['help']); ?>
+           </div>
+         </div>
+       <?php endif; ?>
+
+       <?php if ($page['secondary_content']): ?>
+         <div id="secondary-content-wrapper">
+           <div class="container clearfix">
+             <?php print render($page['secondary_content']); ?>
+           </div>
+         </div>
+       <?php endif; ?>
+
         <div id="content-column"><div class="content-inner">
 
           <?php print render($page['highlighted']); ?>
@@ -237,16 +237,16 @@
         <?php print render($page['sidebar_first']); ?>
         <?php print render($page['sidebar_second']); ?>
 
+        <?php if ($page['tertiary_content']): ?>
+         <div id="tertiary-content-wrapper">
+           <div class="container clearfix">
+             <?php print render($page['tertiary_content']); ?>
+           </div>
+         </div>
+        <?php endif; ?>
+
       </div></div>
     </div></div>
-
-    <?php if ($page['tertiary_content']): ?>
-      <div id="tertiary-content-wrapper">
-        <div class="container clearfix">
-          <?php print render($page['tertiary_content']); ?>
-        </div>
-      </div>
-    <?php endif; ?>
 
     <?php if ($page['footer']): ?>
       <div id="footer-wrapper">

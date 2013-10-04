@@ -1969,6 +1969,19 @@ body.toolbar, body.toolbar-drawer {
   display: none;
 }
 
+#overlay #page-title{
+  display: none;
+}
+
+#overlay #columns {
+  border: none !important;
+}
+
+#overlay #content-wrapper div.columns-inner {
+  position: static !important;
+}
+
+
 /* -=-=- Secondary Menu -=-=- */
 
 #header section.block-menu{
@@ -2022,6 +2035,7 @@ body.toolbar, body.toolbar-drawer {
 
 #block-search-form  {
   margin-bottom: 10px;
+  position: relative;
 }
 
 #block-search-form div.block-inner {
@@ -2084,11 +2098,13 @@ body.toolbar, body.toolbar-drawer {
   width: 90%;
 }
 
+
 #leaderboard-wrapper #block-search-form.accordion input.form-submit {
   position: absolute;
   right: 20px;
   top: 2px;
 }
+
 
 #leaderboard-wrapper #block-search-form.accordion div.contextual-links-wrapper {
   display: none;
@@ -2116,6 +2132,10 @@ body.toolbar, body.toolbar-drawer {
   background: #b9212c;
 }
 
+#nav-wrapper div.container h1 {
+  padding-bottom: 0.3rem;
+}
+
 /* -=-=- Content -=-=- */
 
 #content-wrapper div.container {
@@ -2134,3 +2154,17 @@ body.toolbar, body.toolbar-drawer {
   margin-bottom: 0.2rem;
 }
 
+/* -=-=- Footer -=-=- */
+
+#footer {
+  color: #DEDFD7;
+  background: #1A1A1A;
+}
+
+#footer a {
+  color: #DEDFD7;
+}
+
+#footer #block-menu-menu-leaderboard-left ul {
+  margin-top: 0px;
+}

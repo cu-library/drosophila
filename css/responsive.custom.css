@@ -146,6 +146,7 @@
       border-top: 1rem solid #5A1E17;
       border-left: 1rem solid #E6E6E6;
       border-right: 1rem solid #E6E6E6;
+      border-bottom: 1rem solid #090909;
       background: white;
     }
     
@@ -165,6 +166,27 @@
 
     #nav-wrapper div.container h1 {
       text-align: left;
+    }
+
+    #footer-wrapper .container {
+      background: #1A1A1A;
+      border-bottom: 0.2rem solid #b9212c;
+    }
+
+    #footer {
+      background: white;
+      position: relative;
+      margin-left: 1rem;
+      margin-right: 1rem;
+      top: -1rem;
+    }
+
+    #footer .region-footer {
+      background: #1A1A1A;
+      position: relative;
+      top: 1rem;
+      padding: 1rem;
+      padding-bottom: 0px;
     }
 
 } 
