@@ -1961,6 +1961,10 @@ body.toolbar, body.toolbar-drawer {
 
 /* -=-=- Admin Overlay -=-=- */
 
+ul.action-links {
+	list-style: disc;
+}
+
 #overlay {
   min-width: 300px;
 }
