@@ -1985,6 +1985,14 @@ ul.action-links {
   position: static !important;
 }
 
+td.ctools-export-ui-operations {
+position: relative;
+}
+
+td.ctools-export-ui-operations .ctools-dropbutton {
+position: relative;
+}
+
 
 /* -=-=- Secondary Menu -=-=- */
 
@@ -2172,3 +2180,4 @@ ul.action-links {
 #footer #block-menu-menu-leaderboard-left ul {
   margin-top: 0px;
 }
+

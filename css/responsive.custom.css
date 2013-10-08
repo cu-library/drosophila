@@ -46,7 +46,7 @@
 /*
  * Tablet sizes and up
  */
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 769px) {
 
      /* Reset branding */
     #header{
@@ -139,8 +139,6 @@
       padding-left: 1rem;
     }
     
-    /* -=-=- Content -=-=- */
-    
     #content-wrapper div.container {
       background: white;
     
@@ -184,14 +182,77 @@
       margin-left: 1rem;
       margin-right: 1rem;
       top: -1rem;
+      font-size: 95%;
     }
 
     #footer .region-footer {
       background: #1A1A1A;
       position: relative;
       top: 1rem;
-      padding: 1rem;
+      padding: 0.5rem;
       padding-bottom: 0px;
+    }
+
+    #footer div.block{
+      float: right;
+      width: 75%;
+    }
+
+    #footer div.block:first-child{
+      float: left;
+      width: 20%;
+      margin: 0px;
+    }
+
+    #footer div.block:last-child div.block-inner{
+      padding: 0rem 0.2rem 0.2rem 0.2rem;      
+    }
+
+    #footer li {
+      list-style: none;
+    }
+
+    #footer div.block-inner{
+      margin-right: 0px;
+      margin-left: 0px;
+    }
+    
+    #footer div.block-menu div.block-content ul {
+      margin-top: 0px;
+      margin-bottom: 0px;
+      padding-left: 0px;
+    }
+
+    #footer div.block-menu div.block-content ul li.menu-depth-1{
+      float: left;
+      font-size: 120%;
+      width: 27%;   
+    }
+
+    #footer div.block-menu div.block-content ul li.menu-depth-1 a{
+      color: #F3F3F3;
+    }
+
+    #footer div.block-menu div.block-content ul li.menu-depth-1 ul{
+      padding-right: 1rem;     
+    }
+
+    #footer div.block-menu div.block-content ul li.menu-depth-1 a{
+      padding-right: 1rem;     
+    }
+
+    #footer div.block-menu div.block-content ul li.menu-depth-1.last{
+      margin-right: 0rem;
+      width: 19%;
+    }
+
+    #footer div.block-menu div.block-content ul li.menu-depth-2{
+      font-size: 80%;
+      margin-left: 0.2rem;
+    }
+
+    #footer div.block-menu div.block-content ul li.menu-depth-2 a{
+      color: #DEDFD7;
     }
 
 } 
