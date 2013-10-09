@@ -34,7 +34,7 @@ function makeMenuLink() {
   if (! jQuery('#leaderboard-wrapper #menu-link').length){
     jQuery('#block-system-main-menu').hide();
     var menuImage = Drupal.settings.pathToTheme+"/images/menu.svg";
-    jQuery('#leaderboard-wrapper div.container div.region div.region-inner').prepend("<img id=\"menu-link\" src=\""+menuImage+"\" class=\"inactive\"/>");
+    jQuery('#leaderboard-wrapper div.container div.region div.region-inner').prepend("<img alt=\"Menu Button\" id=\"menu-link\" src=\""+menuImage+"\" class=\"inactive\"/>");
   }
 }
 
