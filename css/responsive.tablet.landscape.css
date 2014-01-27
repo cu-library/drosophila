@@ -18,7 +18,9 @@
 
 
 /* -=-=- Leaderboard -=-=- */
-
+#leaderboard-wrapper{
+  height: 40px;
+}
 
 /* -=-=- Leaderboard Left -=-=- */
 
@@ -34,9 +36,88 @@
 
 /* -=-=- Leaderboard Right -=-=- */
 
+#leaderboard-wrapper #block-system-main-menu {
+  display: none !important;
+}
 
-/* -=-=- Menu Link -=-=- */
+#leaderboard-wrapper nav.block-nice-menus {
+  display: block;
+  overflow: visible;
+}
 
+#leaderboard-wrapper nav.block-nice-menus div.block-inner{
+  overflow: visible;
+}
+
+#leaderboard-wrapper nav.block-nice-menus {
+  float: right;
+  margin-left: 0px;
+}
+
+#leaderboard-wrapper nav.block-nice-menus div.contextual-links-wrapper{
+  display: none;
+}
+
+#leaderboard-wrapper nav.block-nice-menus ul li {
+  background: none;
+  border: none;
+}
+
+#leaderboard-wrapper nav.block-nice-menus ul li a:hover{
+  background: none;
+  color: #FFF;
+}
+
+#leaderboard-wrapper nav.block-nice-menus ul > li {
+  padding: 0rem 0.5rem;
+}
+
+#leaderboard-wrapper nav.block-nice-menus ul > li.over {
+  -webkit-border-top-left-radius: 4px;
+  -webkit-border-top-right-radius: 4px;
+  -moz-border-radius-topleft: 4px;
+  -moz-border-radius-topright: 4px;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+
+  -webkit-border-bottom-left-radius: 0px;
+  -webkit-border-bottom-right-radius: 0px;
+  -moz-border-radius-bottomleft: 0px;
+  -moz-border-radius-bottomright: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+
+  padding-bottom: 0.8rem;
+
+  color: #1A1A1A;
+  background-color: #EFEFEF;
+}
+
+#leaderboard-wrapper nav.block-nice-menus ul > li.over > a {
+  color: #1A1A1A;
+  background-color: #EFEFEF;
+}
+
+#leaderboard-wrapper nav.block-nice-menus ul li ul{
+  background: #EFEFEF;
+  border: none;
+  -webkit-box-shadow: 3px 5px 5px 0px rgba(50, 50, 50, 0.75);
+  -moz-box-shadow:    3px 5px 5px 0px rgba(50, 50, 50, 0.75);
+  box-shadow:         3px 5px 5px 0px rgba(50, 50, 50, 0.75);
+  margin: 0px;
+  margin-top: 0.5rem;
+  padding-bottom: 1rem;
+
+}
+
+#leaderboard-wrapper nav.block-nice-menus ul li ul a{
+  color: #186d92;
+  padding-top: 1rem;
+}
+
+#leaderboard-wrapper nav.block-nice-menus ul li ul a:hover{
+  text-decoration: underline;
+}
 
 /* -=-=- Branding -=-=- */
 
@@ -80,8 +161,26 @@
   float: right;
 }
 
+#block-menu-menu-secondary-menu-to-leaderboa a{
+  color: #EFEFEF;
+  background: #3D6477;
+  padding: 0.25rem 0.45rem;
+  border-radius: 3%/15%;
+}
+
+#block-menu-menu-secondary-menu-to-leaderboa a:hover{
+  background: #BBD3DF;
+  color: #1A1A1A;
+  text-decoration: none;
+}
+
+
 /* -=-=- Search -=-=- */
 
+#block-search-form{
+    clear: right;
+    padding-top: 0.5rem;
+}
 
 /* -=-=- Nav Wrapper (Red Banner) -=-=- */
 #nav-wrapper div.container h1 {

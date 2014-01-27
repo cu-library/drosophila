@@ -10,7 +10,11 @@ When completed, we hope this theme will be:
 
 ## Installation Instructions
 
-Drosophila requires [Adaptive Theme](https://drupal.org/project/adaptivetheme) version 7.x-3.1 to be installed. 
+###Requirements:
+
+[Adaptive Theme](https://drupal.org/project/adaptivetheme) version 7.x-3.1
+[DHTML Menus](https://drupal.org/project/dhtml_menu), with "No Collapsing" option selected, only for Main Menu. Add this patch: https://drupal.org/node/2044719 to line 31.
+[Nice Menus](https://drupal.org/project/nice_menus)
 
 The following menus MUST be created (keep the names exactly the same): 
 
@@ -27,6 +31,7 @@ The following blocks MUST be enabled and in the corresponding regions, in the co
 
 -Leaderboard 
 --Leaderboard-Left    
+--Main Menu (Nice menu)
 --Main menu   
 
 -Header

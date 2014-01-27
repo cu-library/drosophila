@@ -105,7 +105,6 @@ position: relative;
   color: #FFF;
   padding: 0.25rem 0.45rem;
   text-decoration: none;
-  font-weight: bold;
   display: inline-block;
   border-radius: 3%/15%;
 }
@@ -144,18 +143,8 @@ position: relative;
 
 /* -=-=- Leaderboard Right -=-=- */
 
-#leaderboard-wrapper #block-system-main-menu {
-  float: right;
-  margin-left: 0px;
-}
-
-#leaderboard-wrapper #block-system-main-menu li {
-  float: left;
-  padding-right: 0.6rem;
-}
-
-#leaderboard-wrapper #block-system-main-menu li.last {
-  padding-right: 0rem;
+#leaderboard-wrapper nav.block-nice-menus {
+  display: none;
 }
 
 #leaderboard-wrapper #block-system-main-menu.accordion {
