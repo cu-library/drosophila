@@ -147,12 +147,11 @@
       </div>
     </div>
 
-    <?php if ($page['menu_bar'] || $primary_navigation || $secondary_navigation): ?>
       <div id="nav-wrapper">
         <div class="container clearfix">
           <?php print render($page['menu_bar']); ?>
           <?php print render($title_prefix); ?>
-          <?php if ($title): ?>
+          <?php if ($title and $title!=="&lt;none&gt;"): ?>
             <h1 id="page-title"><?php print $title; ?></h1>
           <?php endif; ?>
           <?php print render($title_suffix); // Prints page level contextual links ?>
@@ -160,9 +159,6 @@
           <?php /* if ($secondary_navigation): print $secondary_navigation; endif; */ ?>
         </div>
       </div>
-    <?php endif; ?>
-
-
 
     <div id="content-wrapper"><div class="container">
       <div id="columns"><div class="columns-inner clearfix">

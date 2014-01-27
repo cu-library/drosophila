@@ -394,10 +394,12 @@ position: relative;
 
 #nav-wrapper {
   color: white;
+
 } 
 
 #nav-wrapper div.container {
   background: #b9212c;
+  min-height: 1rem;
 }
 
 #nav-wrapper div.container h1 {
