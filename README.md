@@ -8,6 +8,12 @@ When completed, we hope this theme will be:
   2) Accessible
   3) Beautiful 
 
+## Installation Instructions
+
+Drosophila requires [Adaptive Theme](https://drupal.org/project/adaptivetheme) version 7.x-3.1 to be installed. 
+
+
+
 Important notes:
 
 'Leaderboard-Left' must be in the leaderboard region.

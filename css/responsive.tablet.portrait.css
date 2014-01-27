@@ -8,3 +8,15 @@
  * - Read the _README file in this directory, it contains useful help and other information.
  */
 
+/* -=-=- Branding -=-=- */
+
+#logo img{
+  width: 60px;
+}
+
+#site-name{
+  line-height: 75px;
+  font-size: 2.4rem;
+}
+
+

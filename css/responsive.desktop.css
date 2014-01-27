@@ -7,3 +7,222 @@
  *
  * - Read the _README file in this directory, it contains useful help and other information.
  */
+
+/* -=-=- Global -=-=- */
+
+
+/* -=-=- Admin Toolbar -=-=- */
+
+
+/* -=-=- Admin Overlay -=-=- */
+
+
+/* -=-=- Leaderboard -=-=- */
+
+
+/* -=-=- Leaderboard Left -=-=- */
+
+#leaderboard-wrapper section:first-child a {
+  background: #393939;
+}
+
+#leaderboard-wrapper section:first-child a:hover {
+  color: #1A1A1A;
+  background-color: #FFF;
+  text-decoration: none;
+}
+
+/* -=-=- Leaderboard Right -=-=- */
+
+
+/* -=-=- Menu Link -=-=- */
+
+
+/* -=-=- Branding -=-=- */
+
+#branding{
+  float: left;
+}
+
+#logo{
+  float: left;
+}
+
+#logo img{
+  width: 60px;
+}
+
+#logo a{
+  position: static;
+}
+
+#header {
+  padding-left: 5px;
+}
+
+#site-slogan{
+    display: block;
+    float: right;
+}
+
+#name-and-slogan{
+  float: left;
+}
+
+#site-name{
+  padding-top: 10px;
+  line-height: 34px;
+  font-size: 2.4rem;
+}
+
+
+/* -=-=- Secondary Menu -=-=- */
+
+#header div.region{
+  float: right;
+}
+
+
+/* -=-=- Search -=-=- */
+
+#block-search-form form {
+  border-radius:4%/20%;
+}
+
+#block-search-form form input {
+  border-radius:4%/20%;
+}
+
+#block-search-form {
+  float: right;
+  clear: right;
+}
+
+
+/* -=-=- Nav Wrapper (Red Banner) -=-=- */
+
+#nav-wrapper div.container h1 {
+  text-align: left;
+  padding-left: 1rem;
+  border-right: 1rem solid #B9212c;
+  border-left: 1rem solid #B9212c;
+}
+
+#nav-wrapper {
+  color: white;
+} 
+
+#nav-wrapper div.container {
+  background: #b9212c;
+}
+
+
+/* -=-=- Content -=-=- */
+
+#content-wrapper #columns {
+  border-top: 1rem solid #5A1E17;
+  border-left: 1rem solid #E6E6E6;
+  border-right: 1rem solid #E6E6E6;
+  border-bottom: 1rem solid #090909;
+  background: white;
+}
+
+#content-wrapper div.container {
+  padding-top: 0px;
+  background: white;
+}
+
+#content-wrapper div.columns-inner {
+  position: relative;
+  top: -1rem;
+  background: white;
+  padding-top: 0.3rem;
+}
+
+/* -=-=- Tasks -=-=- */
+
+/* -=-=- Footer -=-=- */
+
+#footer-wrapper .container {
+  background: #1A1A1A;
+  border-bottom: 0.2rem solid #b9212c;
+}
+
+#footer {
+  background: white;
+  position: relative;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  top: -1rem;
+  font-size: 95%;
+}
+
+#footer .region-footer {
+  background: #1A1A1A;
+  position: relative;
+  top: 1rem;
+  padding: 0.5rem;
+  padding-bottom: 0px;
+}
+
+#footer div.block{
+  float: right;
+  width: 75%;
+}
+
+#footer div.block:first-child{
+  float: left;
+  width: 20%;
+  margin: 0px;
+}
+
+#footer div.block:last-child div.block-inner{
+  padding: 0rem 0.2rem 0.2rem 0.2rem;      
+}
+
+#footer li {
+  list-style: none;
+}
+
+#footer div.block-inner{
+  margin-right: 0px;
+  margin-left: 0px;
+}
+
+#footer div.block-menu div.block-content ul {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-left: 0px;
+}
+
+#footer div.block-menu div.block-content ul li.menu-depth-1{
+  float: left;
+  font-size: 120%;
+  width: 27%;   
+}
+
+#footer div.block-menu div.block-content ul li.menu-depth-1 a{
+  color: #F3F3F3;
+}
+
+#footer div.block-menu div.block-content ul li.menu-depth-1 ul{
+  padding-right: 1rem;     
+}
+
+#footer div.block-menu div.block-content ul li.menu-depth-1 a{
+  padding-right: 1rem;     
+}
+
+#footer div.block-menu div.block-content ul li.menu-depth-1.last{
+  margin-right: 0rem;
+  width: 19%;
+}
+
+#footer div.block-menu div.block-content ul li.menu-depth-2{
+  font-size: 80%;
+  margin-left: 0.2rem;
+}
+
+#footer div.block-menu div.block-content ul li.menu-depth-2 a{
+  color: #DEDFD7;
+}

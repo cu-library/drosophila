@@ -162,16 +162,18 @@
       </div>
     <?php endif; ?>
 
-    <?php if ($breadcrumb): ?>
-      <div id="breadcrumb-wrapper">
-        <div class="container clearfix">
-          <?php print $breadcrumb; ?>
-        </div>
-      </div>
-    <?php endif; ?>
+
 
     <div id="content-wrapper"><div class="container">
       <div id="columns"><div class="columns-inner clearfix">
+      
+        <?php if ($breadcrumb): ?>
+          <div id="breadcrumb-wrapper">
+            <div class="container clearfix">
+              <?php print $breadcrumb; ?>
+            </div>
+          </div>
+        <?php endif; ?>
 
        <?php if ($messages || $page['help']): ?>
          <div id="messages-help-wrapper">

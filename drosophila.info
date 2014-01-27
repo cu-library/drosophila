@@ -2,11 +2,11 @@
 ;----------// Theme Information
 
   name        = Drosophila
-  description = Test theme for Maxwell - Responsive & Modern
+  description = Responsive & AODA Compliant Theme for MacOdrum Library
   core        = 7.x
   base theme  = adaptivetheme
-  release     = 7.x-0.1
-  version     = 7.x-0.1
+  release     = 7.x-0.3
+  version     = 7.x-0.3
   engine      = phptemplate
   screenshot  = screenshot.png
 
@@ -16,6 +16,8 @@
   ; See each stylesheet for extensive documentation and help.
   stylesheets[screen][] = css/global.base.css
   stylesheets[screen][] = css/global.styles.css
+  stylesheets[screen][] = css/drosophila.global.css
+
 
   ; Print - uncomment to load basic print styles.
   ; stylesheets[print][] = css/print.css
@@ -72,6 +74,11 @@
   ; following as a guide:
 
   ; ie_scripts[lte IE 8][] = js/my-script.js
+
+  scripts[] = scripts/modernizr.custom.js
+  scripts[] = scripts/svgeezy.min.js
+  scripts[] = scripts/drosophila.js
+
 
 ;----------// Regions
 
@@ -253,7 +260,7 @@
 
   ; CSS
   settings[disable_responsive_styles]     = 0
-  settings[enable_custom_media_queries]   = 1
+  settings[enable_custom_media_queries]   = 0
   settings[global_default_layout]         = 'smartphone-portrait'
   settings[global_default_layout_toggle]  = 0
   settings[global_files_path]             = 'public_files'
@@ -261,9 +268,9 @@
 
   ; Polyfills
   settings[load_html5js]       = 1
-  settings[load_respondjs]     = 0
-  settings[load_ltie8css]      = 0
-  settings[load_scalefixjs]    = 0
+  settings[load_respondjs]     = 1
+  settings[load_ltie8css]      = 1
+  settings[load_scalefixjs]    = 1
 
 
   ; Debug
@@ -422,7 +429,6 @@
   settings[apple_touch_icon_path_l] = 'images/touch-icon-l.png'
   settings[apple_touch_icon_path_m] = 'images/touch-icon-m.png'
   settings[apple_touch_icon_path_h] = 'images/touch-icon-h.png'
-
 
   ; Custom CSS
   settings[custom_css] = ''
