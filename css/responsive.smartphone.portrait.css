@@ -8,17 +8,6 @@
  * - Read the _README file in this directory, it contains useful help and other information.
  */
 
-#header {
-  text-align: center;
-}
 
-#leaderboard-wrapper section:first-child a {
-  color: #EFEFEF;
-  background: #3D6477;
-}
-    
-#leaderboard-wrapper section:first-child a:hover {
-  background: #BBD3DF;
-  color: #1A1A1A;
-  text-decoration: none;
-}
+
+ 

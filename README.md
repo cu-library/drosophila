@@ -12,29 +12,31 @@ When completed, we hope this theme will be:
 
 Drosophila requires [Adaptive Theme](https://drupal.org/project/adaptivetheme) version 7.x-3.1 to be installed. 
 
+The following menus MUST be created (keep the names exactly the same): 
 
+Footer Menu
+Leaderboard-Left
+Secondary Menu
+Secondary Menu to Hamburger
+Secondary Menu To Leaderboard Left
 
-Important notes:
+The following blocks MUST be enabled and in the corresponding regions, in the correct order: 
 
-'Leaderboard-Left' must be in the leaderboard region.
+-Footer
+--Footer Menu 
 
-The main menu must be in the leaderboard region. 
+-Leaderboard 
+--Leaderboard-Left    
+--Main menu   
 
-'Secondary Menu to Hamburger' must be in the header region. 
+-Header
+--Secondary Menu To Leaderboard Left  
+--Secondary Menu to Hamburger 
+--Secondary Menu   
+--Search form 
 
-'Secondary Menu to Leaderboard Left' must be in the header region. 
-
-This theme relies on the above hardcoded menu/block names. 
-
-It also requires menu blocks in the header to be in this order: 
-
-Secondary Menu To Leaderboard Left	
- 
-Secondary Menu to Hamburger	
- 
-Secondary Menu	
- 
-Search form
+-Menu Bar
+--No blocks in this region
 
 ## Status Update - 2013/10/04
 
