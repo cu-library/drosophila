@@ -386,6 +386,11 @@ position: relative;
   overflow: visible;
 }
 
+#leaderboard-wrapper #block-search-form .container-inline {
+padding-top: 0px;
+}
+
+
 /* -=-=- Nav Wrapper (Red Banner) -=-=- */
 
 #nav-wrapper div.container h1 {
