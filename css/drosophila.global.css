@@ -407,10 +407,22 @@ position: relative;
 
 /* -=-=- Content -=-=- */
 
+td.views-field-contextual-links .contextual-links-wrapper{
+  width: 34px;
+  position: relative;
+}
+
+
 #content-wrapper div.container {
   background: white;
   padding-top: 1px;
 }
+
+span.phonenumber {
+  padding-left: 5px;
+  background: url("../images/phone.png") no-repeat;
+}
+
 
 /* -=-=- Tasks -=-=- */
 

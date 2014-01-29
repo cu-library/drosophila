@@ -52,6 +52,12 @@ When completed, we hope this theme will be:
 
 Compatable, ensure the "Adjust..." and "Keep Menu..." options are disabled in admin/config/administration/admin_menu
 
+
+##Credits
+
+ - AdaptiveTheme by Jeff Burnz : http://adaptivethemes.com/
+ - Silk Icons by Mark James : http://www.famfamfam.com/
+
 ## Status Update - 2013/10/04
 
 Image: ![Screenshot](http://i.imgur.com/PDJ9ddK.png?1)
