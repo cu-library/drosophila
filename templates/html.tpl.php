@@ -75,6 +75,6 @@
   <?php print $page_bottom; ?>
   <!-- Credits for Nerds:-->
   <!-- Built by Kevin Bowrin for MacOdrum Library, using: -->
-  <!-- Adaptive Theme, Drupal 7, Google Fonts -->
+  <!-- Adaptive Theme, Drupal 7, Google Fonts, Silk Icons by Mark James -->
 </body>
 </html>
