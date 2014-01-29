@@ -420,12 +420,12 @@ td.views-field-contextual-links .contextual-links-wrapper{
 
 span.phonenumber {
   padding-left: 17px;
-  background: url("images/phone.png") no-repeat;
+  background: url("../images/phone.png") no-repeat;
 }
 
 span.emailaddress {
   padding-left: 17px;
-  background: url("images/email.png") no-repeat;
+  background: url("../images/email.png") no-repeat;
 }
 
 
