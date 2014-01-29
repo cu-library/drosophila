@@ -126,6 +126,10 @@ position: relative;
 
 /* -=-=- Leaderboard Left -=-=- */
 
+#block-menu-menu-secondary-menu-to-leaderboa{
+    width: auto;
+}
+
 #leaderboard-wrapper section:first-child {
   float: left;
 }
