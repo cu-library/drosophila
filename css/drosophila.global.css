@@ -407,6 +407,7 @@ position: relative;
 
 /* -=-=- Content -=-=- */
 
+
 #content-wrapper div.container a {
     color: #186d92;
 }
@@ -415,7 +416,6 @@ td.views-field-contextual-links .contextual-links-wrapper{
   width: 34px;
   position: relative;
 }
-
 
 #content-wrapper div.container {
   background: white;
@@ -431,8 +431,6 @@ span.emailaddress {
   padding-left: 20px;
   background: url("../images/email.png") center left no-repeat;
 }
-
-
 
 /* -=-=- Tasks -=-=- */
 

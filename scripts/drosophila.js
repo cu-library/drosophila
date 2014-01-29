@@ -13,7 +13,6 @@ function playNiceAdmin(){
   else{
     window.setTimeout(playNiceAdmin,20)
   }
-
   });
 }
 
