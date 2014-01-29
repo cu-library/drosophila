@@ -120,6 +120,23 @@
   color: #186d92;
 }
 
+#leaderboard-wrapper nav.block-nice-menus ul li.last ul{
+  left: -2.4rem;
+}
+
+#leaderboard-wrapper nav.block-nice-menus ul li ul{
+  width: 9rem;
+}
+
+#leaderboard-wrapper ul.nice-menu ul li {
+  width: auto;
+}
+
+ul.nice-menu ul li {
+  width: auto;
+}
+
+
 /* -=-=- Branding -=-=- */
 
 #branding{
