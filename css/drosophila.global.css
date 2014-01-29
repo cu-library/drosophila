@@ -424,8 +424,8 @@ span.phonenumber {
 }
 
 span.emailaddress {
-  padding-left: 17px;
-  background: url("../images/email.png") no-repeat;
+  padding-left: 20px;
+  background: url("../images/email.png") center left no-repeat;
 }
 
 
