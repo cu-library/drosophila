@@ -136,6 +136,13 @@ ul.nice-menu ul li {
   width: auto;
 }
 
+#block-menu-menu-leaderboard-left{
+    height: 0px;
+}
+
+#block-nice-menus-1{
+    height: 0px;
+}
 
 /* -=-=- Branding -=-=- */
 
