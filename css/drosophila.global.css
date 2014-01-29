@@ -405,10 +405,6 @@ position: relative;
   min-height: 1rem;
 }
 
-#nav-wrapper div.container h1 {
-  padding-bottom: 0.3rem;
-}
-
 /* -=-=- Content -=-=- */
 
 #content-wrapper div.container {
