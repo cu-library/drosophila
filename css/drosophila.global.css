@@ -407,6 +407,10 @@ position: relative;
 
 /* -=-=- Content -=-=- */
 
+#content-wrapper div.container a {
+    color: #186d92;
+}
+
 td.views-field-contextual-links .contextual-links-wrapper{
   width: 34px;
   position: relative;
