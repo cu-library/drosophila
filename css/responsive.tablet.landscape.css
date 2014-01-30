@@ -191,14 +191,14 @@ ul.nice-menu ul li {
 color: black;
 }
 
-#block-menu-menu-secondary-menu-to-leaderboa a{
+#header #block-menu-menu-secondary-menu-to-leaderboa a{
   color: #EFEFEF;
   background: #3D6477;
   padding: 0.25rem 0.45rem;
   border-radius: 3%/15%;
 }
 
-#block-menu-menu-secondary-menu-to-leaderboa a:hover{
+#header #block-menu-menu-secondary-menu-to-leaderboa a:hover{
   background: #BBD3DF;
   color: #1A1A1A;
   text-decoration: none;
