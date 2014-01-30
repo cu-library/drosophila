@@ -187,6 +187,10 @@ ul.nice-menu ul li {
   float: right;
 }
 
+#header section a {
+color: black;
+}
+
 #block-menu-menu-secondary-menu-to-leaderboa a{
   color: #EFEFEF;
   background: #3D6477;
