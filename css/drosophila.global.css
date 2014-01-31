@@ -441,7 +441,7 @@ td.views-field-contextual-links .contextual-links-wrapper{
   background: url("../images/map.png") center left no-repeat;
 }
 
-span.calendarlink {
+.calendarlink {
   padding-left: 20px;
   background: url("../images/calendar.png") center left no-repeat;
 }
