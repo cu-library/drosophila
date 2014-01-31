@@ -426,17 +426,17 @@ td.views-field-contextual-links .contextual-links-wrapper{
   padding-top: 1px;
 }
 
-span.phonenumber {
+.phonenumber {
   padding-left: 17px;
   background: url("../images/phone.png") no-repeat;
 }
 
-span.emailaddress {
+.emailaddress {
   padding-left: 20px;
   background: url("../images/email.png") center left no-repeat;
 }
 
-span.maplink {
+.maplink {
   padding-left: 20px;
   background: url("../images/map.png") center left no-repeat;
 }
