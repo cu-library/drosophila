@@ -436,10 +436,14 @@ span.emailaddress {
   background: url("../images/email.png") center left no-repeat;
 }
 
-
 span.maplink {
   padding-left: 20px;
   background: url("../images/map.png") center left no-repeat;
+}
+
+span.calendarlink {
+  padding-left: 20px;
+  background: url("../images/calendar.png") center left no-repeat;
 }
 
 
