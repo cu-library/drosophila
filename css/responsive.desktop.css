@@ -10,19 +10,6 @@
 
 @import url("responsive.tablet.landscape.css");
 
-
-/* -=-=- Global -=-=- */
-
-
-/* -=-=- Admin Toolbar -=-=- */
-
-
-/* -=-=- Admin Overlay -=-=- */
-
-
-/* -=-=- Leaderboard -=-=- */
-
-
 /* -=-=- Leaderboard Left -=-=- */
 
 
@@ -78,6 +65,12 @@
   padding-top: 0.3rem;
 }
 
+
+/* -=-=- Alpha-pager -=-= */
+.custom-alpha-pager {
+font-size: 1em;
+}
+
 /* -=-=- Tasks -=-=- */
 
 /* -=-=- Footer -=-=- */
@@ -93,4 +86,24 @@
 #footer .region-footer {
   position: relative;
   top: 1rem;
+}
+
+/* -=-=- News on Homepage -=-=- */
+
+.slide-title h3 a {
+font-size: 1.125em;
+}
+
+.slide-title p {
+display: block;
+}
+
+/* -=-=- Login -=-=- */
+.login-content li {
+font-size:2em;
+}
+
+/* -=-=- Find Page -=-=- */
+div.view-find-guides-frontpage tr {
+border-top: 1px solid #ccc;
 }

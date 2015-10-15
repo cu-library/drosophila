@@ -111,3 +111,7 @@ function drosophila_preprocess_block(&$vars) {
 function drosophila_process_block(&$vars) {
 }
 // */
+
+function drosophila_preprocess_username(&$vars) {
+  $vars['name'] = $vars['name_raw'];
+}

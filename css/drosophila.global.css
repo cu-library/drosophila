@@ -39,6 +39,10 @@ body {
   background: #E6E6E6;
 }
 
+body.cke_editable {
+  background: white;
+}
+
 /* -=-=- Admin Toolbar -=-=- */
 
 #admin-menu {
@@ -411,6 +415,9 @@ position: relative;
 
 /* -=-=- Content -=-=- */
 
+tr:nth-child(2n+2) {
+ background-color: inherit;
+}
 
 #content-wrapper div.container a {
     color: #186d92;
@@ -446,6 +453,19 @@ td.views-field-contextual-links .contextual-links-wrapper{
   background: url("../images/calendar.png") center left no-repeat;
 }
 
+.twitterlink {
+  padding-left: 20px;
+  background: url("../images/twitter.png") center left no-repeat;
+}
+
+.profile .user-picture  {
+  display: none;
+}
+
+ul ul {
+margin-top: 1px;
+margin-bottom: 1px;
+}
 
 /* -=-=- Tasks -=-=- */
 
@@ -472,4 +492,5 @@ td.views-field-contextual-links .contextual-links-wrapper{
 #footer #block-menu-menu-leaderboard-left ul {
   margin-top: 0px;
 }
+
 

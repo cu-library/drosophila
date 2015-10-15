@@ -36,7 +36,7 @@ function makeMenuLink() {
   if (! jQuery("#leaderboard-wrapper #menu-link").length){
     jQuery("#block-system-main-menu").hide();
     var menuImage = Drupal.settings.pathToTheme+"/images/menu.svg";
-    jQuery("#leaderboard-wrapper div.container div.region div.region-inner").prepend("<a href=\"#\" id=\"menu-link\" class=\"inactive\">Menu</a>");
+    jQuery("#leaderboard-wrapper div.container div.region div.region-inner").prepend("<img alt=\"Menu Button\" id=\"menu-link\" src=\""+menuImage+"\" class=\"inactive\"/>");
   }
 }
 
@@ -205,10 +205,12 @@ jQuery(document).ready(function($){
     if( event.type === "mouseenter" ){  
       var menuImage = Drupal.settings.pathToTheme+"/images/menu-hover.svg";
       $(this).addClass("hover");
+      $(this).attr("src", menuImage);      
     }
     else {
       var menuImage = Drupal.settings.pathToTheme+"/images/menu.svg";
       $(this).removeClass("hover");
+      $(this).attr("src", menuImage); 
     }
   });
 
@@ -216,16 +218,19 @@ jQuery(document).ready(function($){
     if( event.type === "mouseenter" ){  
       var menuImage = Drupal.settings.pathToTheme+"/images/menu-active-hover.svg";
       $(this).addClass("hover");
+      $(this).attr("src", menuImage);      
     }
     else {
       var menuImage = Drupal.settings.pathToTheme+"/images/menu-active.svg";
       $(this).removeClass("hover");
+      $(this).attr("src", menuImage); 
     }
   });
 
   $("body").delegate("#menu-link", "click", function(event){
     if($(this).hasClass("active")){
       var menuImage = Drupal.settings.pathToTheme+"/images/menu.svg";
+      $(this).attr("src", menuImage);
       $(this).removeClass("active");
       $(this).addClass("inactive");
       $(this).removeClass("hover");
@@ -252,8 +257,6 @@ jQuery(document).ready(function($){
   });
 
   $("#edit-search-block-form--2").attr("placeholder", "Search the library website...");
-  var context = $("html").css('font-family');
-  console.log(context); 
-  MQ.triggerCallbacks(context); 
+  
 
 });

@@ -8,6 +8,106 @@
  * - Read the _README file in this directory, it contains useful help and other information.
  */
 
+/* -=-=- News on Homepage -=-=- */
+
+.slide-title h3 a {
+font-size: 0.875em;
+}
+
+.slide-title p {
+display: none;
+}
+
+/* -=-=- About Page Tweaks -=-=- */
+#about-mission-statement {
+float: left;
+clear: both;
+}
+
+#about-message {
+float:left;
+clear:both;
+}
 
 
- 
+/* -=-=- Login -=-=- */
+.login-content li {
+font-size:1.4em;
+}
+
+
+/* -=-=- Summon box -=-=- */
+.summon-box-search h2 {
+font-size: 1.25em;
+line-height: normal;
+}
+
+.summonbox {
+height: 1.25em;
+width: 60%;
+}
+
+.summonsubmit {
+height: 1.7em;
+}
+
+/* -=-=- Decrease Size of Red Banner -=-=- */
+#nav-wrapper div.container {
+min-height: 0.3rem;
+}
+
+/* -=-=- Hours on Homepage -=-=- */
+#frontpage-hours-title h2 {
+margin-top: 0;
+font-size: 1.25em;
+}
+
+.view-hours-today h2 {
+font-size: 1.25em;
+margin: 0.25em 0;
+}
+
+/* -=-=- Alpha-pager -=-= */
+.custom-alpha-pager {
+font-size: 1.25em;
+}
+
+/* -=-=- Footer -=-=- */
+#footer-wrapper .container {
+  background: #1A1A1A;
+  border-bottom: 0.2rem solid #b9212c;
+}
+
+#footer .region-footer {
+  background: #1A1A1A;
+  padding: 0.5rem;
+  padding-bottom: 0px;
+}
+
+#footer div.block{
+  width: 100%;
+}
+
+#footer div.block-menu div.block-content ul li.menu-depth-1.first{
+  padding-top: 0.5em;
+}
+
+#footer div.block-menu div.block-content ul li.menu-depth-1{
+  font-size: 120%;
+  padding-top: 1.5em;
+}
+
+/* -=-=- Find page -=-=- */
+div.view-find-guides-frontpage td {
+width: 90%
+}
+
+div.view-find-guides-frontpage span.views-field-title {
+font-size: 110%;
+font-weight: bold;
+}
+
+div.view-find-guides-frontpage tr {
+border-top: 0;
+}
+

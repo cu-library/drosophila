@@ -8,7 +8,7 @@
  */
 body {
   width: 100% !important;
-  margin: 0 !important;
+  margin: 1em !important;
   padding: 0 !important;
   line-height: 1.4;
   word-spacing: 1.1pt;
@@ -24,14 +24,21 @@ body {
  */
 a {
   background: transparent;
-  font-weight: 700;
   text-decoration: underline;
-  color: #0000ee;
 }
-a[href^="http://"]:after, a[href^="http://"]:visited:after {
-  content: "(" attr(href) ")";
+a:link {color: #000;}
+a:visited {color: #000;}
+a:hover {color: #00f;}
+
+.print-links {
+  font-size: 0.8em;
+}
+
+/* Original styling for links -- adding URL after the link. Decided we prefer footnote approach
+  a[href^="http://"]:after, a[href^="http://"]:visited:after {
+  content: " (" attr(href) ")";
   font-size: 10pt;
-}
+}  */
 
 /*
  * Strip background from likely candidates
@@ -117,8 +124,7 @@ h5,
 h6 {
   color: #333333;
   margin: 0;
-  padding: 0;
-  line-height: 1;
+  padding: 2px;
 }
 
 h1 {

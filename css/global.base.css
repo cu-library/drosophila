@@ -399,6 +399,7 @@ input[type="submit"] {
  */
 button[disabled],
 input[disabled] {
+
   cursor: default;
 }
 
@@ -609,7 +610,7 @@ header[role=banner],
 }
 
 /* Shift content offscreen, can be usefull when you reall need to do this */
-.offscreen {
+.offscreen, .element-hidden {
   position: absolute;
   top: -99999em;
   width: 1px;
@@ -619,6 +620,6 @@ header[role=banner],
 }
 
 /* Hide content from all users */
-.element-hidden {
+.really-hidden {
   display: none;
 }
