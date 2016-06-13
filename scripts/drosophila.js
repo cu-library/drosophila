@@ -152,12 +152,12 @@ jQuery(document).ready(function($) {
 
   var target = document.getElementById('edit-field-detailed-guide-section');
   if (target != null) {
-  var MutationObserver = window.MutationObserver || window.WebKitMutationObserver;
-  var myObserver = new MutationObserver(function(mutations) {
-    checkAndDisable();
-  });
-  var config = { childList:true };
-  myObserver.observe(target, config);
-}
+    var MutationObserver = window.MutationObserver || window.WebKitMutationObserver;
+    var myObserver = new MutationObserver(function(mutations) {
+      checkAndDisable();
+    });
+    var config = { childList:true };
+    myObserver.observe(target, config);
+  }
 
 });
