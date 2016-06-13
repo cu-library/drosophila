@@ -160,7 +160,6 @@ margin: 0px;
 
 #footer div.block-menu div.block-content ul {
   margin-top: 0px;
-  margin-bottom: 0px;
   padding-left: 0px;
 }
 
@@ -238,6 +237,15 @@ background: #eee;
 
 .view-data-node-data-field-date-field-hours-building-note-value {
 line-height: 1em;
+}
+
+.views-field-field-hours-building-note br {
+display:none;
+}
+
+.views-field-field-hours-building-note .field-content {
+color: black;
+font-size: 90%
 }
 
 #block-views-hours_service-block_1 h2 {
@@ -665,6 +673,13 @@ tr.major {
 
 .view-subject-guides-by-subject td.views-field-php {
 border-left: 0px;
+}
+
+.field-name-field-articles-more-databases,
+.field-name-field-articles-annotation,
+.field-name-field-additional-databases,
+.field-name-field-database-annotations {
+padding-top: 15px;
 }
 
 /* Services Page */
@@ -1259,3 +1274,208 @@ padding-bottom: 10px;
 font-weight: bold;
 font-size: 1.25em;
 padding-top: 15px;
+}
+
+
+/* Citation Styles */
+.apa-style {
+line-height: 2.5em;
+text-indent: -2em;
+padding-left: 2em;
+}
+
+
+/* New Subject Guides */
+/* Quick Guides */
+
+section.field-name-field-key-resources {
+    padding: 10px;
+    padding-top: 0;
+    margin: 25px 35px 0;
+}
+.field-name-field-key-resources h2.field-label {
+font-size: 1.5em;
+font-weight: bold;
+margin-left: 0.5em;
+padding-bottom: 10px;
+}
+
+.field-collection-item-field-key-resources .field-name-field-key-resource-databases {
+font-size: 1.17em;
+font-weight: bold;
+}
+
+.field-name-field-key-resource-link {
+font-size: 1.17em;
+font-weight: bold;
+}
+
+.field-collection-view {
+border: 0;
+padding: 0.5em 0 0.3em 0;
+}
+
+.field-collection-container {
+border: 0;
+}
+
+.need-more {
+margin:0 55px;
+}
+
+/* Subject Guide Accordion */
+.field-collection-container .field-name-field-detailed-guide-section .field-items .field-item {
+    margin: 0px;
+}
+
+.guide-accordion-header {
+    border: solid thin grey;
+    padding: 0 10px;
+    margin: 0px;
+    cursor: pointer;
+    background-image: url('../images/arrow-down-black.png');
+    background-repeat: no-repeat;
+    background-position: 10px center; 
+    background-size: 17px;
+    padding: 0.5em 0px 0.5em 45px;
+}
+
+.guide-accordion-content {
+    border: solid thin lightgrey;
+    border-top: none;
+    padding: 1.5em 10px 0px 10px;
+    background-color: #fafafa;
+    margin: 0px;
+    position: relative;
+}
+
+.guide-accordion-content-collapsed {
+    height: 0px;
+    visibility: hidden;
+    overflow: hidden;
+    margin: 0px;
+    padding: 0px;
+}
+
+.guide-accordion-header-collapsed {
+    background-image: url('../images/arrow-right-black.png');
+}
+
+a.guide-accordion-header-permalink {
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+}
+
+section.field-name-field-other-subject-guides {
+    margin-bottom: 0.8em;
+}
+
+section.field-name-field-other-subject-guides div.guide-accordion-content, 
+section.field-name-field-general-research-help div.guide-accordion-content {
+    padding-bottom: 1.5em;
+}
+
+section.field-name-field-other-subject-guides div.guide-accordion-content-collapsed,
+section.field-name-field-general-research-help div.guide-accordion-content-collapsed {
+    padding-bottom: 0px;
+}
+
+/* Detailed Guide Sidebar - Related Guides */
+.detailed-guide-related-guides .views-label {
+font-weight: bold;
+}
+
+.detailed-guide-related-guides .item-list ul li {
+margin: 0 0 0.5em 0;
+}
+
+
+/* Subject Guides Faceted Search */
+
+#block-views-new-subject-guides-block-1 {
+border-bottom: solid thin lightgrey;
+padding-bottom: 20px;
+margin-bottom: 10px;
+width: 95%;
+font-size: 1.35em;
+}
+
+.view-new-subject-guides {
+padding: 10px;
+}
+
+.pane-new-subject-guides .view-display-id-block_1 {
+font-size: 1.35em;
+}
+
+.subject-guides-filtered .region-two-33-66-first {
+max-width: 300px;
+}
+
+.view-new-subject-guides .views-row {
+padding-top: 10px;
+font-size: 1.15em;
+}
+
+.view-new-subject-guides .views-field-title {
+font-weight: bold;
+}
+
+.subject-guide-type {
+color: #767676;
+font-style:italic;
+font-size:0.9em;
+}
+
+#block-views-exp-new-subject-guides-page .option {
+font-weight: normal;
+}
+
+#views-exposed-form-new-subject-guides-page .form-item-field-subject-taxonomy-tid-1 .description {
+display: none;
+}
+
+/* Subject Guides Editing */
+
+.field-type-field-collection-form .field-name-field-key-resource-databases {
+margin-top: 5px;
+border: thin solid lightgrey;
+border-bottom: none;
+padding: 5px;
+}
+
+.field-type-field-collection-form .field-name-field-key-resource-link {
+border: thin solid lightgrey;
+border-top: none;
+padding: 5px;
+margin-bottom: 10px;
+}
+
+.field-name-field-key-resource-link .form-type-link-field {
+font-size: 0.85em;
+}
+
+.field-name-field-key-resource-link .description {
+display: none;
+}
+
+#edit-field-other-subject-guides-und,
+#edit-field-general-research-help-und,
+#edit-field-related-guides-help-und,
+#edit-field-sidebar-subject-guides-und {
+height: 300px;
+}
+
+#edit-field-related-help-und,
+#edit-field-related-find-und,
+#edit-field-related-govinfo-und {
+height: 200px;
+}
+
+
+#guide-section-limit-reached-message {
+  margin-left: 1.5rem;
+  color: darkred;
+  font-weight: bolder;
+}

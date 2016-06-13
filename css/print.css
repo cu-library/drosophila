@@ -74,8 +74,11 @@ table * {
 
 /*
  * Hide various bits of the page
- */
-.sidebar,
+
+.sidebar, */
+#leaderboard-wrapper,
+.region-header,
+.region-footer,
 #breadcrumb,
 .nav,
 .field-type-taxonomy-term-reference,
@@ -105,12 +108,18 @@ ul.links,
  * Layout
  */
 #header {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .content-inner {
   margin: 0 !important;
   padding: 0 !important;
+}
+
+.sidebar {
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: solid grey thin;
 }
 
 /*
@@ -162,7 +171,7 @@ hgroup a:link, hgroup a:visited {
 }
 
 #page-title {
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 pre,
@@ -191,13 +200,13 @@ hr {
  * Header, Logo, Site name
  */
 #header {
-  padding-bottom: 20px;
+  padding-bottom: 10px;
 }
 
 #logo img {
   padding: 0 10px 0 0;
   margin: 0 !important;
-  float: none !important;
+  float: left;
 }
 
 /*
@@ -276,9 +285,9 @@ form {
  */
 .node,
 .comment {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   overflow: hidden;
-  page-break-inside: avoid;
+/*  page-break-inside: avoid; */
 }
 
 .submitted {

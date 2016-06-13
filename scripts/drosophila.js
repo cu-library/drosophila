@@ -102,3 +102,62 @@ jQuery(document).ready(function($) {
 });
 
 
+/* Toggle open and close  */
+function toggle_visibility(id) {
+   var e = document.getElementById(id);
+   if(e.style.display == 'block')
+      e.style.display = 'none';
+   else
+      e.style.display = 'block';
+}
+
+
+/* Subject Guide Accordion */
+jQuery(document).ready(function($) {
+
+  // Add permalinks to each detailed guide accordion content div. 
+  $('div.detailed-guide-accordion-content').each(function() {
+    var anchor = '#' + $(this).closest('div.content').find('a.guide-accordion-header-wrapper').attr('id');
+    var anchorLink = '<a tabindex="-1" class="guide-accordion-header-permalink" href="'+anchor+'" title="Permalink to this section">¶</a>';
+    $(this).append(anchorLink);
+  });
+
+  // On click of link around header, toggle classes for headers and content.
+  $('a.guide-accordion-header-wrapper').click(function(e) {
+    e.preventDefault();
+    $(this).children('h2,h3').toggleClass('guide-accordion-header-collapsed');
+    $(this).closest('div.content,section').find('div.guide-accordion-content').toggleClass('guide-accordion-content-collapsed');
+  });
+
+  // If the hash is an id of a accordion header wrapper a, emulate a click. 
+  // This expands the content when using the permalinks. 
+  // The extra call to filter() keeps this from being used to click on other elements on the page. 
+  var hash = window.location.hash;
+  if ( hash !== "" && hash !== "#" ){
+    $(hash).filter("a.guide-accordion-header-wrapper").click();
+  }
+
+});
+
+/* Subject Guides - Limit Number of Accordions */
+jQuery(document).ready(function($) {
+
+  function checkAndDisable(){
+    var index = $('#edit-field-detailed-guide-section input[name="field_detailed_guide_section_add_more"]').parent().prev().find('tr:last').index();
+    if (index >= 4) {
+      $('#edit-field-detailed-guide-section input[name="field_detailed_guide_section_add_more"]').attr( "disabled", true ).after('<span id="guide-section-limit-reached-message">Contact Shelley or Kevin if you require additional sections.</span>');
+    }
+  }
+  checkAndDisable();
+
+  var target = document.getElementById('edit-field-detailed-guide-section');
+  if (target != null) {
+  var MutationObserver = window.MutationObserver || window.WebKitMutationObserver;
+  var myObserver = new MutationObserver(function(mutations) {
+    checkAndDisable();
+  });
+  var config = { childList:true };
+  myObserver.observe(target, config);
+}
+
+});
