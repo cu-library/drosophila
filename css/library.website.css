@@ -1393,7 +1393,7 @@ margin: 0 0 0.5em 0;
 
 /* Subject Guides Faceted Search */
 
-#block-views-new-subject-guides-block-1 {
+#block-views-subject-guides-block {
 border-bottom: solid thin lightgrey;
 padding-bottom: 20px;
 margin-bottom: 10px;
@@ -1401,11 +1401,11 @@ width: 95%;
 font-size: 1.35em;
 }
 
-.view-new-subject-guides {
+.view-subject-guides {
 padding: 10px;
 }
 
-.pane-new-subject-guides .view-display-id-block_1 {
+.pane-subject-guides .view-display-id-block_1 {
 font-size: 1.35em;
 }
 
@@ -1413,12 +1413,12 @@ font-size: 1.35em;
 max-width: 300px;
 }
 
-.view-new-subject-guides .views-row {
+.view-subject-guides .views-row {
 padding-top: 10px;
 font-size: 1.15em;
 }
 
-.view-new-subject-guides .views-field-title {
+.view-subject-guides .views-field-title {
 font-weight: bold;
 }
 
@@ -1428,11 +1428,11 @@ font-style:italic;
 font-size:0.9em;
 }
 
-#block-views-exp-new-subject-guides-page .option {
+#block-views-exp-subject-guides-page .option {
 font-weight: normal;
 }
 
-#views-exposed-form-new-subject-guides-page .form-item-field-subject-taxonomy-tid-1 .description {
+#views-exposed-form-subject-guides-page .form-item-field-subject-category-tid .description {
 display: none;
 }
 
