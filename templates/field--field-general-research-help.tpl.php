@@ -80,7 +80,7 @@
 ?>
 <<?php print $tag; ?> class="<?php print $classes; ?>"<?php print $attributes; ?>>
 
-  <a class="guide-accordion-header-wrapper" href="#">
+  <a id="general-research-help" class="guide-accordion-header-wrapper" href="#">
     <h3 class="field-label guide-accordion-header guide-accordion-header-collapsed"<?php print $title_attributes; ?>><?php print $label ?></h3>
   </a>
 
