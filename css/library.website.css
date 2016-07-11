@@ -517,6 +517,11 @@ width: 45%;
 display: none;
 }
 
+/* Find Gov Info Google search boxes */
+.gov-info-cse .gsc-control-wrapper-cse {
+background-color: lightgoldenrodyellow;
+}
+
 
 /* Login */
 .login-background {
@@ -1278,7 +1283,7 @@ padding-top: 15px;
 
 
 /* Citation Styles */
-.apa-style {
+.apa-style, .mla-style {
 line-height: 2.5em;
 text-indent: -2em;
 padding-left: 2em;
