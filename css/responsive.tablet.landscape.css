@@ -93,6 +93,10 @@
   background-color: #EFEFEF;
 }
 
+#leaderboard-wrapper nav.block-nice-menus ul.nice-menu > li.over {
+  padding-bottom: 0.8rem;
+}
+
 #leaderboard-wrapper nav.block-nice-menus ul > li.over > a {
   color: #1A1A1A;
   background-color: #EFEFEF;
