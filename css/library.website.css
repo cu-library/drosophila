@@ -186,6 +186,13 @@ margin-left: 50px;
 font-size: 18px;
 }
 
+/*Service Hours*/
+.service-hours {
+border: thin solid darkgray;
+display: inline-block;
+padding: 10px;
+}
+
 /* Hours Calendar */
 calendar-calendar .month-view .full td.single-day .calendar.monthview .view-field {
 float: none;
@@ -297,7 +304,7 @@ left: 0px;
 display: block;
 z-index: 6;
 opacity: 1;
-width: 100%
+width: 100%;
 height: 267px;
 }
 
