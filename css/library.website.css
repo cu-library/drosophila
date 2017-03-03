@@ -1532,22 +1532,11 @@ height: 85px;
 font-size: 1.5em;
 margin: 5px;
 padding: 12px 10px 15px 15px;
-border-radius: 10px;
+border-radius: 2px;
 float: left;
+border-top: solid #b9212c;
+background: #e6e6e6;
 }
-
-.help-box a {
-color: #0b6085 !important;
-}
-
-#help1, #help3, #help5 {
-background: #c4d1e9;
-}
-
-#help2, #help4, #help6 {
-background: #f0e1a1;
-}
-
 
 /* Find Data */
 .data-search p {
