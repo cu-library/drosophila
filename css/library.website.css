@@ -1522,18 +1522,15 @@ margin: 0;
 }
 
 .data-box-links {
-background-color: #186d92;
-border: solid #186d92;
-border-radius: 10px;
+background-color: #e6e6e6;
+border: solid #b9212c;
+border-radius: 2px;
 padding: 5px;
 margin: 5px 5px 25px 15px;
 float: left;
 height: 100px;
 width: 85%;
-}
-
-.data-box-links a {
-color: white !important;
+box-shadow: 1px 1px 2px 1px #ccc;
 }
 
 #mini-panel-find_data_panel .panel-separator {
