@@ -1147,34 +1147,12 @@ list-style:none;
 /* Research Data Management page */
 .rdm {
 width: 85%;
-font-size: 2em;
-border-radius: 8px;
-margin: 5px;
+font-size: 1.5em;
+border-radius: 2px;
+border-top: solid thin #b9212c;
+background: #e6e6e6;
+margin: 8px;
 padding: 10px;
-}
-
-#rdm_what {
-background-color: #186d92;
-}
-
-#rdm_why {
-background-color: #cc3700; 
-}
-
-#rdm_how {
-background-color: #a46a00;
-}
-
-#rdm_share {
-background-color: maroon;
-}
-
-#rdm_help {
-background-color: #007149;
-}
-
-.rdm a {
-color: white !important;
 }
 
 /* Tunnel Elevator down message block */
