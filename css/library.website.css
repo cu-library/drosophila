@@ -272,6 +272,20 @@ clear: both;
 color: red;
 }
 
+.db-connect-link {
+padding-top: 10px;
+font-size:1.25em;
+}
+
+.db-connect-link a {
+font-weight:bold;
+}
+
+.connect-box {
+border: 1px solid #186d92;
+margin-bottom: 15px;
+}
+
 /*Staff Directory*/
 .alert-red {
   color: #C70E3A;
@@ -1296,6 +1310,15 @@ text-indent: -2em;
 padding-left: 2em;
 }
 
+.chicago-bib {
+text-indent: -2em;
+padding-left: 2em;
+}
+
+.chicago-notes {
+text-indent: 2em;
+}
+
 
 /* New Subject Guides */
 /* Quick Guides */
@@ -1490,4 +1513,90 @@ height: 200px;
   margin-left: 1.5rem;
   color: darkred;
   font-weight: bolder;
+}
+
+#field-link-to-detailed-guide-add-more-wrapper tr.even,
+#field-link-to-detailed-guide-add-more-wrapper td.field-multiple-drag {
+display: none;
+}
+
+.page-node-99999 .field-name-field-other-subject-guides-form {
+display: none;
+}
+
+/* GIS Help Pages */
+
+.help-box {
+width: 230px;
+height: 85px;
+font-size: 1.5em;
+margin: 5px;
+padding: 12px 10px 15px 15px;
+border-radius: 10px;
+float: left;
+}
+
+.help-box a {
+color: #0b6085 !important;
+}
+
+#help1, #help3, #help5 {
+background: #c4d1e9;
+}
+
+#help2, #help4, #help6 {
+background: #f0e1a1;
+}
+
+
+/* Find Data */
+.data-search p {
+margin: 0;
+}
+
+.data-box-links {
+background-color: #186d92;
+border: solid #186d92;
+border-radius: 10px;
+padding: 5px;
+margin: 5px 5px 25px 15px;
+float: left;
+height: 100px;
+width: 85%;
+}
+
+.data-box-links a {
+color: white !important;
+}
+
+#mini-panel-find_data_panel .panel-separator {
+display:none;
+}
+
+
+/* Support Library */
+.donate {
+width: 40%;
+min-width: 315px;
+font-size: 2em;
+border-radius: 8px;
+margin: 5px 5px 5px 40px;
+padding: 10px;
+float:left;
+}
+
+.donate a {
+color: white !important;
+}
+
+.donate p {
+margin-bottom: 5px;
+}
+
+.support-gold {
+background-color: #be7a00;
+}
+
+.green {
+background: #007149;
 }
