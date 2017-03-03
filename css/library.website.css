@@ -1523,7 +1523,7 @@ margin: 0;
 
 .data-box-links {
 background-color: #e6e6e6;
-border: solid #b9212c;
+border-top: solid #b9212c;
 border-radius: 2px;
 padding: 5px;
 margin: 5px 5px 25px 15px;
@@ -1543,24 +1543,15 @@ display:none;
 width: 40%;
 min-width: 315px;
 font-size: 2em;
-border-radius: 8px;
+border-radius: 2px;
 margin: 5px 5px 5px 40px;
 padding: 10px;
 float:left;
-}
-
-.donate a {
-color: white !important;
+background: #e6e6e6;
+border-top: solid #b9212c;
+box-shadow: 1px 1px 2px 1px #ccc;
 }
 
 .donate p {
 margin-bottom: 5px;
-}
-
-.support-gold {
-background-color: #be7a00;
-}
-
-.green {
-background: #007149;
 }
