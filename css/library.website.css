@@ -188,7 +188,11 @@ font-size: 18px;
 
 /*Service Hours*/
 .service-hours {
+<<<<<<< HEAD
 border: thin solid darkgrey;
+=======
+border: thin solid darkgray;
+>>>>>>> 8451f20f3e74b7f46c6d70857ca170998640110b
 display: inline-block;
 padding: 10px;
 }
@@ -1149,7 +1153,11 @@ list-style:none;
 width: 85%;
 font-size: 1.5em;
 border-radius: 2px;
+<<<<<<< HEAD
 border-top: solid thin #B9212c;
+=======
+border-top: solid thin #b9212c;
+>>>>>>> 8451f20f3e74b7f46c6d70857ca170998640110b
 background: #e6e6e6;
 margin: 8px;
 padding: 10px;
@@ -1296,8 +1304,6 @@ padding-left: 2em;
 .chicago-notes {
 text-indent: 2em;
 }
-
-
 
 /* New Subject Guides */
 /* Quick Guides */
@@ -1515,7 +1521,6 @@ float: left;
 border-top: solid #b9212c;
 background: #e6e6e6;
 }
-
 
 /* Find Data */
 .data-search p {
