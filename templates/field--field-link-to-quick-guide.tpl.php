@@ -87,7 +87,7 @@
   <div class="field-items"<?php print $content_attributes; ?>>
     <?php foreach ($items as $delta => $item) : ?>
       <div class="field-item <?php print $delta % 2 ? 'odd' : 'even'; ?>"<?php print $item_attributes[$delta]; ?>>
-        <?php $item['#markup'] = str_replace("</a>", " Quick Guide</a>", $item['#markup']); ?>
+        <?php $item['#label'] = $item['#label'] . " Quick Guide"; ?>
         <p>
           <strong>Just need a few resources to get you started? Try the <?php print render($item); ?>.</strong>
         </p>
