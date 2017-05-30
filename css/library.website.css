@@ -186,6 +186,13 @@ margin-left: 50px;
 font-size: 18px;
 }
 
+/*Service Hours*/
+.service-hours {
+border: thin solid darkgrey;
+display: inline-block;
+padding: 10px;
+}
+
 /* Hours Calendar */
 calendar-calendar .month-view .full td.single-day .calendar.monthview .view-field {
 float: none;
@@ -265,6 +272,20 @@ clear: both;
 color: red;
 }
 
+.db-connect-link {
+padding-top: 10px;
+font-size:1.25em;
+}
+
+.db-connect-link a {
+font-weight:bold;
+}
+
+.connect-box {
+border: 1px solid #186d92;
+margin-bottom: 15px;
+}
+
 /*Staff Directory*/
 .alert-red {
   color: #C70E3A;
@@ -297,7 +318,7 @@ left: 0px;
 display: block;
 z-index: 6;
 opacity: 1;
-width: 100%
+width: 100%;
 height: 267px;
 }
 
@@ -1126,34 +1147,12 @@ list-style:none;
 /* Research Data Management page */
 .rdm {
 width: 85%;
-font-size: 2em;
-border-radius: 8px;
-margin: 5px;
+font-size: 1.5em;
+border-radius: 2px;
+border-top: solid thin #B9212c;
+background: #e6e6e6;
+margin: 8px;
 padding: 10px;
-}
-
-#rdm_what {
-background-color: #186d92;
-}
-
-#rdm_why {
-background-color: #cc3700; 
-}
-
-#rdm_how {
-background-color: #a46a00;
-}
-
-#rdm_share {
-background-color: maroon;
-}
-
-#rdm_help {
-background-color: #007149;
-}
-
-.rdm a {
-color: white !important;
 }
 
 /* Tunnel Elevator down message block */
@@ -1288,6 +1287,16 @@ line-height: 2.5em;
 text-indent: -2em;
 padding-left: 2em;
 }
+
+.chicago-bib {
+text-indent: -2em;
+padding-left: 2em;
+}
+
+.chicago-notes {
+text-indent: 2em;
+}
+
 
 
 /* New Subject Guides */
@@ -1478,9 +1487,72 @@ height: 300px;
 height: 200px;
 }
 
-
 #guide-section-limit-reached-message {
   margin-left: 1.5rem;
   color: darkred;
   font-weight: bolder;
+}
+
+#field-link-to-detailed-guide-add-more-wrapper tr.even,
+#field-link-to-detailed-guide-add-more-wrapper td.field-multiple-drag {
+display: none;
+}
+
+.page-node-99999 .field-name-field-other-subject-guides-form {
+display: none;
+}
+
+/* GIS Help Pages */
+
+.help-box {
+width: 230px;
+height: 85px;
+font-size: 1.5em;
+margin: 5px;
+padding: 12px 10px 15px 15px;
+border-radius: 2px;
+float: left;
+border-top: solid #b9212c;
+background: #e6e6e6;
+}
+
+
+/* Find Data */
+.data-search p {
+margin: 0;
+}
+
+.data-box-links {
+background-color: #e6e6e6;
+border-top: solid #b9212c;
+border-radius: 2px;
+padding: 5px;
+margin: 5px 5px 25px 15px;
+float: left;
+height: 100px;
+width: 85%;
+box-shadow: 1px 1px 2px 1px #ccc;
+}
+
+#mini-panel-find_data_panel .panel-separator {
+display:none;
+}
+
+
+/* Support Library */
+.donate {
+width: 40%;
+min-width: 315px;
+font-size: 2em;
+border-radius: 2px;
+margin: 5px 5px 5px 40px;
+padding: 10px;
+float:left;
+background: #e6e6e6;
+border-top: solid #b9212c;
+box-shadow: 1px 1px 2px 1px #ccc;
+}
+
+.donate p {
+margin-bottom: 5px;
 }
