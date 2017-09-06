@@ -87,7 +87,7 @@
   <div class="field-items"<?php print $content_attributes; ?>>
     <?php foreach ($items as $delta => $item) : ?>
       <div class="field-item <?php print $delta % 2 ? 'odd' : 'even'; ?>"<?php print $item_attributes[$delta]; ?>>
-        <?php $item['#markup'] = str_replace("</a>", " Subject Guide: Detailed Version</a>", $item['#markup']); ?>
+        <?php $item['#label'] = $item['#label'] . " Subject Guide: Detailed Version"; ?>
         <h3><?php print render($item); ?></h3>
       </div>
     <?php endforeach; ?>
