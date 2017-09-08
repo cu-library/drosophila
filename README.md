@@ -8,13 +8,13 @@ When completed, we hope this theme will be:
 2. Accessible
 3. Beautiful 
 
-##Requirements:
+## Requirements:
 
 * [Adaptive Theme](https://drupal.org/project/adaptivetheme) version 7.x-3.1
 * [DHTML Menus](https://drupal.org/project/dhtml_menu), with "No Collapsing" option selected, only for Main Menu. Add this patch: https://drupal.org/node/2044719 to line 31.
 * [Nice Menus](https://drupal.org/project/nice_menus)
 
-##Installation Instructions: 
+## Installation Instructions: 
 
 1. Install Requirements.
 3. Install Drosophila.
@@ -48,12 +48,12 @@ When completed, we hope this theme will be:
    - No blocks in this region
 7. Create or import menu links. 
 
-##Admin Menu
+## Admin Menu
 
 Compatable, ensure the "Adjust..." and "Keep Menu..." options are disabled in admin/config/administration/admin_menu
 
 
-##Credits
+## Credits
 
  - AdaptiveTheme by Jeff Burnz : http://adaptivethemes.com/
  - Silk Icons by Mark James : http://www.famfamfam.com/
