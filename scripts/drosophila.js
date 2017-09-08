@@ -77,7 +77,8 @@ document.forms.course_reserves_search.submit();
 function search_scholars_portal_journals() {
 var url="http://proxy.library.carleton.ca/login?url=http://journals2.scholarsportal.info./search-advanced.xqy?q=";
 var input_element = document.getElementById("search_terms");
-document.location = url + encodeURIComponent(input_element.value);
+var end_of_url = "&search_in=anywhere&date_from=&date_to=&sort=relevance&sub=";
+document.location = url + encodeURIComponent(input_element.value) + end_of_url;
 }
 
 
