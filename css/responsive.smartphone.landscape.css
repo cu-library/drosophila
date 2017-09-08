@@ -15,10 +15,25 @@
 font-size: 1.25em;
 }
 
+
+/* -=-=- Help Link on Homepage -=-=- */
+.askus-logo {
+margin-top: -100px;
+margin-left: 220px;
+margin-bottom: 20px;
+}
+
+/* -=-=- Middle Panels on Homepage -=-=- */
+.page-home2 div.four-4x25 {
+margin-left: 20px !important;
+max-width: 350px;
+}
+
 /* -=-=- Decrease Size of Red Banner -=-=- */
 #nav-wrapper div.container {
 min-height: 0.4rem;
 }
+
 
 /* -=-=- About Page Tweaks -=-=- */
 #about-mission-statement {
@@ -60,6 +75,19 @@ font-size: 1.25em;
 font-size: 1.25em;
 margin: 0.25em 0;
 }
+
+
+/* -=-=- Find Research Services In the Building on Home -=-= */
+.page-home .four-4x25 .panel-row .region {
+width: 50%;
+clear: none;
+}
+
+.page-home .at-panel .region {
+display: inline;
+float: left;
+}
+
 
 
 /* -=-=- Login -=-=-= */
