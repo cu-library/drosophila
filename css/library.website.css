@@ -406,69 +406,9 @@ float: left;
 }
 
 /* Quicksearch Boxes */
-.find-search{
-background: #ffffff; /* Old browsers */
-background: -moz-linear-gradient(top, #ffffff 0%, #e8e8e8 100%); /* FF3.6+ */
-background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#e8e8e8)); /* Chrome,Safari4+ */
-background: -webkit-linear-gradient(top, #ffffff 0%,#e8e8e8 100%); /* Chrome10+,Safari5.1+ */
-background: -o-linear-gradient(top, #ffffff 0%,#e8e8e8 100%); /* Opera 11.10+ */
-background: -ms-linear-gradient(top, #ffffff 0%,#e8e8e8 100%); /* IE10+ */
-background: linear-gradient(to bottom, #ffffff 0%,#e8e8e8 100%); /* W3C */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e8e8e8',GradientType=0 ); /* IE6-9 */
-padding: 10px;
-margin-bottom: 10px;
-border-bottom: thin solid #E4E4E4;
-border-radius: 10px;
--moz-border-radius: 10px;
--webkit-border-radius: 10px;
-float: left;
-padding-top: 10px;
-width: 95%;
-}
-
-#quicksearch-description{
-/* padding-left: 80px; */
-width: 100%;
-float: left;
-}
-
 .quicksearch-more-links {
-border-top: thin solid #C9C9C9;
-width: 100%;
 float: left;
-margin-top: 10px;
-}
-
-.quicksearch select {
-height: 1.8em;
-}
-
-.searchtype {
-height: 21px;
-/* width: 95px; */
-}
-
-.searchscope {
-clear: both;
-margin-top: 5px;
-line-height: 100%;
-}
-
-.searchscope input{
-margin: 0px 3px;
-}
-
-.quicksearch-more-links ul {
-margin: 0px;
-padding: 5px 0px 0px 10px;
-}
-
-.searcharg {
-float: left;
-margin-top: 1px;
-margin-right: 5px;
-line-height: 100%;
-width: 50%; /* was 60% */
+margin-top: 20px;
 }
 
 .quicksearch-more-links li {
@@ -479,11 +419,8 @@ list-style: none;
 padding-left: 10px;
 }
 
-.quicksearch {
-margin-bottom: 10px;
-float: left;
-/* width: 87%;
-padding-left: 80px; */
+.quicksearch select {
+height: 1.5em;
 }
 
 .findgov-more {
