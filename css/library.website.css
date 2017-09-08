@@ -20,7 +20,6 @@ margin-bottom: 0;
 margin-bottom: 0.5em;
 } */
 
-
 .summon-box {
 background: #9f9f9f;
 background-image: url("images/ml_night2_bg2.jpg");
@@ -65,7 +64,7 @@ background-color: rgba(228,228,228);
 border-color: #186d92;
 border-style: solid;
 border-width: 2px;
-font-size:14px;
+font-size:0.95em;
 position: relative;
 left: -5px;
 }
@@ -93,7 +92,7 @@ padding-left:20px;
 }
 
 .small {
-font-size: 11px;
+font-size: 0.8em;
 }
 
 .uppercase {
@@ -163,38 +162,52 @@ margin: 0px;
   padding-left: 0px;
 }
 
+/* Ask Us */
+.askus-logo {
+margin-top: 15px;
+margin-bottom: -15px;
+}
+
+.library-help {
+margin-left: 20px;
+}
 
 /* Hours */
 #frontpage-hours-date {
 color: #767676;
-font-size: 13px;
-margin-top: 8px;
-margin-left: 10px;
+font-size: 1em;
+margin-top: -10px;
 }
 
 #frontpage-hours-title h2{ 
-margin-bottom: 0px;
-margin-top: 25px;
-margin-left: 10px;
+margin-top: 20px;
 }
 
-.view-hours-today {
-margin-left: 50px;
+.chat-panel #front-page-hours-title {
+margin-top: 0px;
 }
+
+.chat-panel2 #frontpage-hours-title h2{ 
+/* margin-bottom: 0px; */
+margin-top: 20px;
+/* margin-left: 0px; */
+}
+
+/* .view-hours-today {
+margin-left: 50px;
+} */
 
 .views-field-field-hours-building {
 font-size: 18px;
 }
 
-/*Service Hours*/
-.service-hours {
-<<<<<<< HEAD
-border: thin solid darkgrey;
-=======
-border: thin solid darkgray;
->>>>>>> 8451f20f3e74b7f46c6d70857ca170998640110b
-display: inline-block;
-padding: 10px;
+.views-field-field-hours-building h2 {
+margin-top: 0px;
+}
+
+.pane-views-hours-today-block {
+margin-top: 20px;
+margin-left: 20px;
 }
 
 /* Hours Calendar */
@@ -261,6 +274,13 @@ font-size: 90%
 
 #block-views-hours_service-block_1 h2 {
 clear: both;
+}
+
+/*Service Hours*/
+.service-hours {
+border: thin solid darkgrey;
+display: inline-block;
+padding: 10px;
 }
 
 /*Databases*/
@@ -345,7 +365,7 @@ bottom:5px;
 left:0px;
 max-width: 360px;
 width:100%;
-height: 33%;
+height: 40%;
 background-color:#000;
 opacity: 0.6;
 }
@@ -358,13 +378,13 @@ left: 5px;
 }
 
 .slide-title h3 a {
-font-size: 1.125em;
+font-size: 1em;
 line-height: 1em;
 color: #fff !important;
 }
 
 .slide-title p {
-font-size: 0.875;
+font-size: 0.875em;
 color: #fff;
 margin-top: -14px;
 }
@@ -406,6 +426,7 @@ float: left;
 }
 
 /* Quicksearch Boxes */
+
 .quicksearch-more-links {
 float: left;
 margin-top: 20px;
@@ -511,7 +532,7 @@ padding-bottom:0.5em;
 }
 
 .login-small {
-font-size:55%;
+font-size:50%;
 font-weight:normal;
 }
 
@@ -694,14 +715,12 @@ display: none;
 /* Support Library sidebar */
 
 .support img {
-float: left;
 padding-top: 1em;
 padding-right: 0.5em;
-padding-bottom: 0.5em;
 }
 
 .support h3 {
-padding-top: 2em;
+margin-top: 0;
 }
 
 .support p {
@@ -806,295 +825,12 @@ width:80%;
 max-width:325px;
 }
 
-/* About page */
-
-.glance-title {
-font-size: 2.5em;
-margin-bottom: 0px;
-border-bottom: solid red;
-}
-
-.header-background {
-padding-top:10px;
-background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAALklEQVQYV2Ps6Oj4zwAEFRUVjCAaF2CkvkJ81iHL4XUX9RRi8yBWq6mvEFtIAACr9BgLPFTSuwAAAABJRU5ErkJggg==);
-}
-
-.header-background h2 {
-background: white;
-padding: 0px;
-margin-top: 10px;
-max-width: 320px;
-}
-
-#block-panels-mini-about-page-at-a-glance .row-1 {
-position: relative;
-z-index: 1;
-}
-
-#ribbon-left {
- width: 75%;
- position: relative;
- background: #186d92;
- color: #fff;
- text-align: center;
- padding: 0.5em 1em; 
- margin: 1em 5em; 
-}
-	
-#ribbon-left:before {
-		content: "";
- position: absolute;
- display: block;
- top: -1em;
- border: 2.5em solid #145d7c;
- z-index: -1;
-left:-4em;
-border-right-width: 2.5em;
-border-left-color:transparent;
-}
-	
-
-#ribbon-left #ribbon-content:before {
- content: "";
- position: absolute;
- display: block;
- border-style: solid;
- border-color: transparent #0d3c50 transparent transparent;
- top: -1em;
- left: 0;
- border-width: 1em 1em 0 0;
-}
-	
-#ribbon-right {
- width: 75%;
- position: relative;
- background: #cc3700;
- color: #fff;
- text-align: center;
- padding: 0.5em 1em; 
- margin: 1em 2em; 
-}
-	
-#ribbon-right:after {
-		content: "";
- position: absolute;
- display: block;
- top: -1em;
- border: 2.5em solid #b33000;
- z-index: -1;
-right:-4em;
-border-left-width: 2.5em;
-border-right-color:transparent;
-	}
-
-#ribbon-right #ribbon-right-content:after {
- content: "";
- position: absolute;
- display: block;
- border-style: solid;
- border-color: transparent transparent #802200 transparent;
- top: -1em;
- right: 0;
- border-width: 0 1em 1em 0;
-}
-
-.circle {
-width: 135px;
-height: 135px;
-padding-bottom: 5px;
--moz-border-radius: 50%;
--webkit-border-radius: 50%;
-border-radius: 50%;
-float: left;
-margin-bottom: 0px;
-font-weight: bold;
-}
-
-.circle a {
-color: white !important;
-}
-
-.circle-black {
-background: black;
-}
-
-.circle-orange {
-background: #cc3700;
-}
-
-.circle-grey {
-background: #767676;
-}
-
-.circle-blue {
-background: #186d92;
-}
-
-.circle-red {
-background: maroon;
-}
-
-.circle-gold {
-background: #a46a00;
-}
-
-.circle p {
-margin-left:10%;
-padding-top:15%;
-}
-
-.big-red-font {
-color: #B9212c;
-font-weight: bold;
-font-size: 1.5em;
-font-family: Verdana;
-}
-
-.org-excellence h3 {
-border-bottom: 2px solid red;
-padding-bottom: 5px;
-}
-
-.org-excellence p {
-font-size: 1.3em;
-}
-
-.org-excel {
-float: left;
-padding-right: 20px;
-width: 45%;
-}
-
-/* Trends page - graphs */
-.trends-header {
-padding-top:1px;
-padding-bottom:1px;
-background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAALklEQVQYV2Ps6Oj4zwAEFRUVjCAaF2CkvkJ81iHL4XUX9RRi8yBWq6mvEFtIAACr9BgLPFTSuwAAAABJRU5ErkJggg==);
-}
-
-.trends-header h2 {
-background: white;
-padding: 0px;
-max-width: 320px;
-}
-
-.graph {display: block; /* fixes layout wonkiness in FF1.5 */
-  position: relative; width: 400px; height: 300px;
-  margin: 4.1em 0 0; padding: 0;
-  font-size: 9px;}
-
-.graph-six {display: block; /* fixes layout wonkiness in FF1.5 */
-  position: relative; width: 400px; height: 360px;
-  margin: 4.1em 0 0; padding: 0;
-  font-size: 9px;}
-
-.graph caption, .graph-six caption {caption-side: bottom; width: 600px;
-  position: relative; z-index: 10;
-  font-weight: bold;
-  font-size: 16px;
-  top:-25px;}
-
-.graph tbody tr, .graph-six tbody tr {
-border:none;
-}
-
-.graph tr, .graph th, .graph td, .graph-six tr, .graph-six th, .graph-six td { 
-  position: absolute;
-  bottom: 0; width: 80px; z-index: 2;
-  margin: 0; padding: 0;
-  text-align: center;}
-
-.graph td.year, .graph-six td.year {
- z-index: 3;
- font-size:11px;
- color: black;
- bottom:-16px;
-}
-
- .graph thead, .graph-six thead {
- position: absolute;
- left: -9999px;
-}
-
-.graph tbody tr, .graph-six tbody tr {height: 296px; padding-top: 2px; color: #AAA;}
-.graph .q1, .graph-six .q1 {left: 0;}
-.graph .q2, .graph-six .q2 {left: 80px;}
-.graph .q3, .graph-six .q3 {left: 160px;}
-.graph .q4, .graph-six .q4 {left: 240px;}
-.graph .q5, .graph-six .q5 {left: 320px; border-right: none;}
-.graph tbody th, .graph-six tbody th {top: 0.75em; vertical-align: top;}
-.graph .bar, .graph-six .bar {width: 40px; border: 1px solid; border-bottom: none; color: #000;}
-.graph .bar p, .graph-six .bar p {margin: 5px 0 0; padding: 0;}
-
-
-.graph .data, .graph-six .data {left: 13px; background-color: maroon;
-  border-color: maroon; color: maroon;}
-.graph .data-blue, .graph-six .data-blue {left: 13px; background-color: #186d92;
-  border-color: #186d92; color: #186d92;}
-.graph .data-grey, .graph-six .data-grey {left: 13px; background-color: #767676;
-  border-color: #767676; color: #767676;}
-.graph .data-orange, .graph-six .data-orange {left: 13px; background-color: #cc3700;
-  border-color: #cc3700; color: #cc3700;}
-.graph .data-green, .graph-six .data-green {left: 13px; background-color: #006633;
-  border-color: #006633; color: #006633;}
-
-
-.ticks {position: relative; top: -300px; left: 2px;
-  width: 396px; height: 300px; z-index: 1;
-  margin-bottom: -300px;
-  font-size: 9px;}
-.ticks-six {position: relative; top: -360px; left: 2px;
-  width: 396px; height: 360px; z-index: 1;
-  margin-bottom: -360px;
-  font-size: 9px;}
-.ticks .tick, .ticks-six .tick {position: relative; border-bottom: 1px solid #BBB; width: 400px;}
-.ticks .tick p  {position: absolute; left: 100%; top: -0.67em; margin: 0 0 0 0.5em; width:40px;}
-.ticks-six .tick p {position: absolute; left: 100%; top: -0.67em; margin: 0 0 0 0.5em; width:55px;}
-
-#trends-learning {
-padding-top:20px;
-padding-bottom:20px;
-}
-
-.learning-trend {
-float:left;
-width:25%;
-margin: 0 10px;
--moz-border-radius: 20%;
--webkit-border-radius: 20%;
-border-radius: 20%;
-text-align:center;
-color:white;
-font-weight:bold;
-padding-top:10px;
-padding-bottom:10px;
-}
-
-
-#trends-e-use {
-padding-top:20px;
-padding-bottom:10px;
-}
-
-#trends-e-use li {
-list-style:none;
-font-weight: bold;
-}
-
-.trends-budget li {
-list-style:none;
-}
-
 /* Research Data Management page */
 .rdm {
 width: 85%;
 font-size: 1.5em;
 border-radius: 2px;
-<<<<<<< HEAD
 border-top: solid thin #B9212c;
-=======
-border-top: solid thin #b9212c;
->>>>>>> 8451f20f3e74b7f46c6d70857ca170998640110b
 background: #e6e6e6;
 margin: 8px;
 padding: 10px;
@@ -1285,6 +1021,10 @@ margin:0 55px;
     margin: 0px;
 }
 
+h2.guide-accordion-header {
+font-size: 1.38em;
+}
+
 .guide-accordion-header {
     border: solid thin grey;
     padding: 0 10px;
@@ -1355,7 +1095,7 @@ border-bottom: solid thin lightgrey;
 padding-bottom: 20px;
 margin-bottom: 10px;
 width: 95%;
-font-size: 1.35em;
+font-size: 1.25em;
 }
 
 .view-subject-guides {
@@ -1450,13 +1190,32 @@ display: none;
 .help-box {
 width: 230px;
 height: 85px;
-font-size: 1.5em;
+font-size: 1.45em;
 margin: 5px;
 padding: 12px 10px 15px 15px;
 border-radius: 2px;
 float: left;
-border-top: solid #b9212c;
+border-top: solid #B9212c;
 background: #e6e6e6;
+}
+
+
+/* Support Library */
+.donate {
+width: 40%;
+min-width: 315px;
+font-size: 1.8em;
+border-radius: 2px;
+margin: 5px 5px 5px 40px;
+padding: 10px;
+float:left;
+background: #e6e6e6;
+border-top: solid #b9212c;
+box-shadow: 1px 1px 2px 1px #ccc;
+}
+
+.donate p {
+margin-bottom: 5px;
 }
 
 /* Find Data */
@@ -1476,25 +1235,10 @@ width: 85%;
 box-shadow: 1px 1px 2px 1px #ccc;
 }
 
+.data-box-links h2 {
+margin-top: 0;
+}
+
 #mini-panel-find_data_panel .panel-separator {
 display:none;
-}
-
-
-/* Support Library */
-.donate {
-width: 40%;
-min-width: 315px;
-font-size: 2em;
-border-radius: 2px;
-margin: 5px 5px 5px 40px;
-padding: 10px;
-float:left;
-background: #e6e6e6;
-border-top: solid #b9212c;
-box-shadow: 1px 1px 2px 1px #ccc;
-}
-
-.donate p {
-margin-bottom: 5px;
 }

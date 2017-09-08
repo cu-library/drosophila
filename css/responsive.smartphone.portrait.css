@@ -18,6 +18,17 @@ font-size: 0.875em;
 display: none;
 }
 
+/* -=-=- Help Link on Homepage -=-=- */
+.askus-logo {
+margin-bottom: 20px;
+}
+
+/* -=-=- Middle Panels on Homepage -=-=- */
+.page-home2 div.four-4x25 {
+margin-left: 20px !important;
+max-width: 350px;
+}
+
 /* -=-=- About Page Tweaks -=-=- */
 #about-mission-statement {
 float: left;

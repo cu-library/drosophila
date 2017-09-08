@@ -24,16 +24,14 @@
 /* -=-=- News on Homepage -=-=- */
 
 .slide-title h3 a {
-font-size: 0.875em;
+font-size: 1.25em;
 }
 
-.slide-title p {
-display: none;
+.page-home .two-33-66 .region-two-33-66-first,
+.page-home .two-33-66 .region-two-33-66-second {
+width: 100%;
 }
 
-.transparent-caption {
-height: 60%;
-}
 
 /* -=-=- Login -=-=- */
 .login-content li {
