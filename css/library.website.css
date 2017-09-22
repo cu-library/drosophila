@@ -183,26 +183,12 @@ margin-top: -10px;
 margin-top: 20px;
 }
 
-.chat-panel #front-page-hours-title {
-margin-top: 0px;
-}
-
-.chat-panel2 #frontpage-hours-title h2{ 
-/* margin-bottom: 0px; */
-margin-top: 20px;
-/* margin-left: 0px; */
-}
-
-/* .view-hours-today {
-margin-left: 50px;
-} */
-
 .views-field-field-hours-building {
 font-size: 18px;
 }
 
 .views-field-field-hours-building h2 {
-margin-top: 0px;
+margin: 0px;
 }
 
 .pane-views-hours-today-block {
