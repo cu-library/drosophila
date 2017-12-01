@@ -319,7 +319,7 @@ max-width: 100%;
 width: 100%;
 position: relative;
 height: 257px;
-}
+} 
 
 .view-news-random-image .views-row {
 position: relative;
@@ -1227,4 +1227,22 @@ margin-top: 0;
 
 #mini-panel-find_data_panel .panel-separator {
 display:none;
+}
+
+/* Make Embedded Video Responsive */
+.video-embed { 
+position: relative;
+padding-bottom: 56.25%;
+height: 0;
+overflow: hidden;
+max-width: 680px;
+height: auto;
+}
+
+.video-embed iframe {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
 }
