@@ -413,6 +413,14 @@ float: left;
 
 /* Quicksearch Boxes */
 
+.searchscope { 
+margin-top: 5px; 
+}
+
+.searchscope input { 
+margin: 5px 3px 5px 10px; 
+}
+
 .quicksearch-more-links {
 float: left;
 margin-top: 20px;
