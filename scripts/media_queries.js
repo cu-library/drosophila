@@ -117,7 +117,7 @@ var queries = [
 
   // Smartphone
   {
-    context: ["smartphone_portrait", "smartphone_landscape"],
+    context: ["smalltouch_portrait", "smalltouch_landscape"],
     call_in_each_context: false,
     callback: function() {      
       makeMenuLink();
@@ -125,24 +125,24 @@ var queries = [
       moveSecondaryMenuLinks();
       moveSearch();
       moveLogo();
-      console.log("smartphone");
+      console.log("smalltouch");
     },
   },
   // portrait only
   {
-    context: "smartphone_portrait",
+    context: "smalltouch_portrait",
     callback: function() {
       
       // Debug
-      console.log("smartphone portrait");
+      console.log("smalltouch portrait");
     }
   },
   // landscape only
   {
-    context: "smartphone_landscape",
+    context: "smalltouch_landscape",
     callback: function() {
       // Debug
-      console.log("smartphone_landscape ");
+      console.log("smalltouch_landscape ");
     }
   },
 
