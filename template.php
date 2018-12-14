@@ -310,3 +310,11 @@ function drosophila_process_block(&$vars) {
 function drosophila_preprocess_username(&$vars) {
   $vars['name'] = $vars['name_raw'];
 }
+
+function drosophila_admin_menu_output_alter(&$content) {
+  $content['menu']['imce'] = array(
+    "#title" => "File Browser",
+    "#href" => "imce",
+    "#weight" => -20,
+    );
+}
