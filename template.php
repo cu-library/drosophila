@@ -84,8 +84,21 @@ function drosophila_process_page(&$vars) {
  * Override or insert variables into the node templates.
  */
 /* -- Delete this line if you want to use these functions
+*/
 function drosophila_preprocess_node(&$vars) {
+  if ($vars['type'] === "news") {
+    $vars['displaydate'] = format_date($vars['created'], 'custom', 'F j, Y');
+    $vars['datetime'] = format_date($vars['created'], 'custom', 'Y-m-d\TH:i:sO'); // PHP 'c' format is not proper ISO8601!
+    $vars['publication_date'] = '<em><time datetime="' . $vars['datetime'] . '">' . $vars['displaydate'] . '</time></em>';
+    $vars['submitted'] = t('!datetime',
+      array(
+        '!datetime' => $vars['publication_date'],
+      )
+    );
+  } 
 }
+
+/*
 function drosophila_process_node(&$vars) {
 }
 // */
