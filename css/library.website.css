@@ -846,42 +846,14 @@ padding: 10px;
 margin:0;
 }
 
-/* KPM Dashboard */
-.views-field-field-kpm-status-1 p {
-padding-left: 28px;
-}
-
-.kpm0 {
-background-image: url("images/red-light.png");
-background-repeat: no-repeat;
-background-position: 5px 5px;
-background-size: 20px 20px;
-}
-
-.kpm1 {
-background-image: url("images/amber-light.png");
-background-repeat: no-repeat;
-background-position: 5px 5px;
-background-size: 20px 20px;
-}
-
-.kpm2 {
-background-image: url("images/green-light.png");
-background-repeat: no-repeat;
-background-position: 5px 5px;
-background-size: 20px 20px;
-}
-
 /* Strategic Plan */
 .kpm-theme {
-padding-top: 10px;
-padding-bottom: 10px;
-margin-bottom: 0px;
 font-weight: bold;
 }
 
 .kpm-theme h2 {
 color: #b9212c;
+margin: 0;
 }
 
 .kpm-goal {
@@ -889,8 +861,10 @@ margin-left: 10px;
 margin-bottom: 0px;
 }
 
-.kpm-goal h2.block-title {
+.kpm-goal h3 {
 background-color: lightgrey;
+margin: 0;
+font-size: 1.3em;
 }
 
 .kpm-goal p {
@@ -903,58 +877,26 @@ margin-left: 5px;
 }
 
 .kpm-measures {
-margin-left: 20px;
+margin-left: 10px;
 }
 
-.kpm-measures h2 {
-font-size: 1.25em;
+.kpm-measures h4 {
+font-size: 1.15em;
 }
 
-.kpm-measures p {
+.kpm-measures h5 {
+font-size: 1em;
+margin-bottom: 15px;
+}
+
+.kpm-measures ul {
+padding-left: 0;
+list-style: none;
+}
+
+.kpm-measures li {
 margin: 0 0 .5em 0;
 }
-
-/* Themes, Goals, Measures */
-.node-strategic-plan-themes h1.node-title {
-font-size: 1em;
-}
-
-.node-strategic-plan-themes h1.node-title a {
-color: black !important;
-}
-
-section.field-name-field-goal-text {
-font-weight:bold;
-font-size:1.25em;
-}
-
-article.node-strategic-plan-themes, article.node-strategic-plan-goals {
-margin-bottom: 0;
-}
-
-.node-strategic-plan-goals h1.node-title {
-font-size: 1em;
-}
-
-.node-strategic-plan-goals h1.node-title a {
-color: black !important;
-}
-
-article.node-performance-measures section.field-name-field-strategic-actions {
-display: none;
-}
-
-section.field-name-field-kpm-status {
-padding-top: 10px;
-padding-bottom: 10px;
-}
-
-.field-name-field-measure {
-font-weight: bold;
-font-size: 1.25em;
-padding-top: 15px;
-}
-
 
 /* Citation Styles */
 .apa-style, .mla-style {
