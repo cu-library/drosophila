@@ -87,6 +87,7 @@ function drosophila_process_page(&$vars) {
 */
 function drosophila_preprocess_node(&$vars) {
   if ($vars['type'] === "news") {
+    $vars['user_picture'] = "";
     $vars['displaydate'] = format_date($vars['created'], 'custom', 'F j, Y');
     $vars['datetime'] = format_date($vars['created'], 'custom', 'Y-m-d\TH:i:sO'); // PHP 'c' format is not proper ISO8601!
     $vars['publication_date'] = '<em><time datetime="' . $vars['datetime'] . '">' . $vars['displaydate'] . '</time></em>';
