@@ -914,6 +914,15 @@ padding-left: 2em;
 text-indent: 2em;
 }
 
+.ieee-style {
+padding-left: 3em;
+}
+
+.ieee-style .number {
+margin-left: -2.6em;
+margin-right: 1.3em;
+}
+
 /* New Subject Guides */
 /* Quick Guides */
 
