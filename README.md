@@ -20,37 +20,37 @@ When completed, we hope this theme will be:
 3. Install Drosophila.
 4. Set Site Slogan (if not already done).
 5. Create the following menus:
-  - Footer Menu
-  - Leaderboard-Left
-  - Secondary Menu
-  - Secondary Menu to Hamburger
-  - Secondary Menu To Leaderboard Left
+   - Footer Menu
+   - Leaderboard-Left
+   - Secondary Menu
+   - Secondary Menu to Hamburger
+   - Secondary Menu To Leaderboard Left
 6. Create and enable the following blocks:
 
   The following blocks be enabled and in the corresponding regions, in the correct order: 
 
-  - Footer
-   - Contact Us (this must be created manually)
-   - Footer Menu 
+   - Footer
+       - Contact Us (this must be created manually)
+       - Footer Menu 
 
   - Leaderboard 
-   - Leaderboard-Left    
-   - Main Menu (Nice menu)
-   - Main menu   
+       - Leaderboard-Left    
+       - Main Menu (Nice menu)
+       - Main menu   
   
   - Header
-   - Secondary Menu To Leaderboard Left  
-   - Secondary Menu to Hamburger 
-   - Secondary Menu   
-   - Search form 
+       - Secondary Menu To Leaderboard Left  
+       - Secondary Menu to Hamburger 
+       - Secondary Menu   
+       - Search form 
   
   - Menu Bar
-   - No blocks in this region
+       - No blocks in this region
 7. Create or import menu links. 
 
 ## Admin Menu
 
-Compatable, ensure the "Adjust..." and "Keep Menu..." options are disabled in admin/config/administration/admin_menu
+Compatible, ensure the "Adjust..." and "Keep Menu..." options are disabled in `admin/config/administration/admin_menu`
 
 
 ## Credits
