@@ -50,7 +50,7 @@ When completed, we hope this theme will be:
 
 ## Admin Menu
 
-Compatible, ensure the "Adjust..." and "Keep Menu..." options are disabled in `admin/config/administration/admin_menu`
+Compatible, ensure the `Adjust...` and `Keep Menu...` options are disabled in `admin/config/administration/admin_menu`
 
 
 ## Credits
